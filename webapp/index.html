@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Family Calendar</title>
+    <meta name="description" content="Our home calendar">
+    <meta name="author" content="Rob Gillen">
+    <meta http-equiv="refresh" content="300">
+    <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- calendar stuff -->
+    <link href='/packages/core/main.css' rel='stylesheet' />
+    <link href='/packages/bootstrap/main.css' rel='stylesheet' />
+    <link href='/packages/timegrid/main.css' rel='stylesheet' />
+    <link href='/packages/daygrid/main.css' rel='stylesheet' />
+    <link href='/packages/list/main.css' rel='stylesheet' />
+    
+    <link rel="stylesheet" href="styles.css?v1.0">
+</head>
+
+<body onload="loadCalendarData()">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-7">
+                <div id='calendar'></div>
+
+                <iframe style="align:left" id="forecast_embed" type="text/html" frameborder="0" height="245px" width="830px" 
+                        src="http://forecast.io/embed/#lat=35.973&lon=-83.9695&name=Knoxville&units=us"> </iframe>
+
+                <div class="card mb-3">
+                        <div class="card-header">
+                            Verse of the Day
+                        </div>
+                        <div class="card-body" id="dailyVerse">
+                        </div>
+                    </div>                        
+            </div>
+            <div class="col-sm-5">
+                <!-- <nav aria-label="breadcrumb mt-1">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><span id="myclock"></span></li>
+                    </ol>
+                </nav> -->
+                <div class="card mb-3 mt-1">
+                    <div class="card-header">
+                        Today's Agenda
+                    </div>
+                    <div class="card-body" id="dailyAgenda">
+                    </div>
+                </div>
+                <!-- <div class="card mb-3">
+                    <div class="card-header">
+                        Dinner Menu
+                    </div>
+                    <div class="card-body" id="dinnerMenu">
+                    </div>
+                </div> -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Memory Verse
+                    </div>
+                    <div class="card-body" id="memoryVerse">
+                    </div>
+                </div>             
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="/images/IMG_1561.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1562.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1566.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1575.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1576.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1582.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1586.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1589.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1604.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1607.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1615.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1619.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1626.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1633.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/IMG_1636.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="ical.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.3.0/ical.js"></script>
+    <!-- calendar scripts -->
+    <script src='/packages/core/main.js'></script>
+    <script src='/packages/interaction/main.js'></script>
+    <script src='/packages/bootstrap/main.js'></script>
+    <script src='/packages/daygrid/main.js'></script>
+    <script src='/packages/timegrid/main.js'></script>
+    <script src='/packages/list/main.js'></script>
+    <!-- script src='theme-chooser.js'></script> -->
+
+    <script src="moment.min.js"></script>
+    <script src="memory.js"></script>
+    <script src="scripts.js"></script>
+    <script src="https://www.biblegateway.com/votd/get/?format=json&version=CSB&callback=writeVerseData"></script>
+</body>
+</html>
