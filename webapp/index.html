@@ -7,7 +7,7 @@
   <title>Family Calendar</title>
   <meta name="description" content="Our home calendar">
   <meta name="author" content="Rob Gillen">
-  <meta http-equiv="refresh" content="600">
+  <!-- meta http-equiv="refresh" content="600" -->
   <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -21,11 +21,13 @@
       <!-- LHS Column -->
       <div class="col-sm-8">
         <div id='calendar' style="width:65vw; height:50vh;"></div>
-        <div class="card border-0" style="margin: auto; text-align: center; width: 65vw">
+ 
+        <!-- <div class="card border-0" style="margin: auto; text-align: center; width: 65vw">
           <iframe style="width:65vw; height=25vh;" frameborder="0"
                   src="https://embed.windy.com/embed2.html?lat=35.912&lon=-84.223&zoom=7&level=surface&overlay=radar&type=map&location=coordinates&metricWind=default&metricTemp=%C2%B0F&radarRange=-1">
           </iframe>
         </div>
+        -->
       </div>
       <!-- RHS Column -->
       <div class="col-sm-4">
@@ -33,15 +35,20 @@
           <div class="card-header">Today's Agenda</div>
           <div class="card-body" id="dailyAgenda"></div>
         </div>
+        <!--
         <div class="card mb-3">
           <div class="card-header">Memory Verse</div>
           <div class="card-body" id="memoryVerse"></div>
         </div> 
+        -->
         <div class="card border-0" style="margin: auto; text-align: center; width: 30vw; height: 245px;">
           <iframe style="align:left" id="forecast_embed" type="text/html" frameborder="0" 
                   style="width: 30vw;" height="245px" 
                   src="http://forecast.io/embed/#lat=35.973&lon=-83.9695&name=Knoxville&units=us"> </iframe>
         </div>
+        <div class="card border-0" style="margin: auto; text-align: center; width: 30vw;">
+          <img src="radar.png" onload='imageRefresh(this, 300000);'>
+        <div>
         <!--
         <div id="myPhotos" class="carousel slide lazy" data-ride="carousel" data-interval="10000">
           <div class="carousel-inner" role="listbox">

@@ -348,6 +348,16 @@ function checkTime(i) {
   return i;
 }
 
+function imageRefresh(img, timeout) {
+  console.log("Updating image...");
+  setTimeout(function() {
+    var d = new Date;
+    var http  = img.src;
+    if (http.indexOf("&d=") != -1) { http = http.split("&d=")[0]; }
+    img.src = http + '&d=' + d.getTime();
+  }, timeout);
+}
+
 
 /// This is the main entry point for this little application
 loadCalendarData = function () {
