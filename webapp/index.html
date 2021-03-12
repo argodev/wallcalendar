@@ -2,182 +2,158 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Family Calendar</title>
-    <meta name="description" content="Our home calendar">
-    <meta name="author" content="Rob Gillen">
-    <meta http-equiv="refresh" content="600">
-    <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-
-    <link href='fullcalendar/main.css' rel='stylesheet' />
-
-    <!-- calendar stuff -->
-    <!-- <link href='/packages/core/main.css' rel='stylesheet' />
-    <link href='/packages/bootstrap/main.css' rel='stylesheet' />
-    <link href='/packages/timegrid/main.css' rel='stylesheet' />
-    <link href='/packages/daygrid/main.css' rel='stylesheet' />
-    <link href='/packages/list/main.css' rel='stylesheet' /> -->
-    <link rel="stylesheet" href="styles.css?v1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Family Calendar</title>
+  <meta name="description" content="Our home calendar">
+  <meta name="author" content="Rob Gillen">
+  <meta http-equiv="refresh" content="600">
+  <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+  <link href='fullcalendar/main.css' rel='stylesheet' />
+  <link rel="stylesheet" href="styles.css?v1.0">
 </head>
-
 <body onload="loadCalendarData()">
-    <div class="container-fluid">
-        <div class="row">
-            <!-- LHS Column -->
-            <div class="col-sm-7">
-                <div id='calendar' style="width:1050px"></div>
-                <div class="card border-0" style="margin: auto; text-align: center; width: 1050px">
-                    <!-- <iframe style="align:left" id="forecast_embed" type="text/html" frameborder="0" 
-                            height="245px" width="1050px" 
-                        	src="http://forecast.io/embed/#lat=35.973&lon=-83.9695&name=Knoxville&units=us"> </iframe> -->
-                    <iframe width="1050"
-                        height="220" 
-                        src="https://embed.windy.com/embed2.html?lat=35.912&lon=-84.223&zoom=7&level=surface&overlay=radar&type=map&location=coordinates&metricWind=default&metricTemp=%C2%B0F&radarRange=-1"
-                        frameborder="0"></iframe>
-        		</div>
-            </div>
-            <!-- RHS Column -->
-            <div class="col-sm-5">
-                <div class="card mb-3 mt-1">
-                    <div class="card-header">
-                        Today's Agenda
-                    </div>
-                    <div class="card-body" id="dailyAgenda">
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-header">
-                        Memory Verse
-                    </div>
-                    <div class="card-body" id="memoryVerse">
-                    </div>
-                </div>             
-		
-                <div class="card border-0" style="margin: auto; text-align: center; width: 765px">
-                    <iframe style="align:left" id="forecast_embed" type="text/html" frameborder="0" 
-                            height="245px" width="765px" 
-                        	src="http://forecast.io/embed/#lat=35.973&lon=-83.9695&name=Knoxville&units=us"> </iframe>
-                    <!-- <iframe width="1050"
-                        height="220" 
-                        src="https://embed.windy.com/embed2.html?lat=35.912&lon=-84.223&zoom=7&level=surface&overlay=radar&type=map&location=coordinates&metricWind=default&metricTemp=%C2%B0F&radarRange=-1"
-                        frameborder="0"></iframe> -->
-        		</div>
-
-                <div id="myPhotos" class="carousel slide lazy" data-ride="carousel" data-interval="10000">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="/images/ec0101.jpg" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0102.jpg" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0103.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0104.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0105.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0106.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0107.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0201.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0202.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0203.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0204.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0205.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0206.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0207.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0208.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0209.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0210.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0211.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0212.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0213.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0214.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0215.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0216.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0301.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0302.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0303.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0304.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0305.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0306.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0307.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" data-src="/images/ec0308.jpg" alt="Third slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- LHS Column -->
+      <div class="col-sm-7">
+        <div id='calendar' style="width:1050px"></div>
+        <div class="card border-0" style="margin: auto; text-align: center; width: 1050px">
+          <iframe width="1050" height="220" frameborder="0"
+                  src="https://embed.windy.com/embed2.html?lat=35.912&lon=-84.223&zoom=7&level=surface&overlay=radar&type=map&location=coordinates&metricWind=default&metricTemp=%C2%B0F&radarRange=-1">
+          </iframe>
         </div>
+      </div>
+      <!-- RHS Column -->
+      <div class="col-sm-5">
+        <div class="card mb-3 mt-1">
+          <div class="card-header">Today's Agenda</div>
+          <div class="card-body" id="dailyAgenda"></div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-header">Memory Verse</div>
+          <div class="card-body" id="memoryVerse"></div>
+        </div> 
+        <div class="card border-0" style="margin: auto; text-align: center; width: 765px">
+          <iframe style="align:left" id="forecast_embed" type="text/html" frameborder="0" 
+                  height="245px" width="765px" 
+                  src="http://forecast.io/embed/#lat=35.973&lon=-83.9695&name=Knoxville&units=us"> </iframe>
+        </div>
+        <div id="myPhotos" class="carousel slide lazy" data-ride="carousel" data-interval="10000">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="/images/ec0101.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0102.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0103.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0104.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0105.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0106.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0107.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0201.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0202.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0203.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0204.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0205.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0206.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0207.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0208.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0209.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0210.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0211.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0212.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0213.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0214.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0215.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0216.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0301.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0302.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0303.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0304.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0305.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0306.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0307.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" data-src="/images/ec0308.jpg" alt="Third slide">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- <script src="ical.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.3.0/ical.js"></script>
-    <!-- calendar scripts v5.x -->
-    <script src='fullcalendar/main.js'></script>
-    <script src="moment.min.js"></script>
-    <script src="memory.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- <script src="ical.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.3.0/ical.js"></script>
+  <!-- calendar scripts v5.x -->
+  <script src='fullcalendar/main.js'></script>
+  <script src="moment.min.js"></script>
+  <script src="memory.js"></script>
 
-    <script>
+  <script>
         myCalendar = null;
         document.addEventListener('DOMContentLoaded', function() {
           var calendarEl = document.getElementById('calendar');
@@ -194,8 +170,7 @@
           myCalendar.render();
         });
   
-    </script>
-    <script src="scripts.js"></script>
-    <!-- script src="https://www.biblegateway.com/votd/get/?format=json&version=CSB&callback=writeVerseData"></script -->
+  </script>
+  <script src="scripts.js"></script>
 </body>
 </html>
