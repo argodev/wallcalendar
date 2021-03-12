@@ -38,168 +38,769 @@ family_verses = [{
     "endDate": "2019-11-03",
     "reference": "2 Corinthians 5:17",
     "text": "Therefore, if anyone is in Christ, he is a new creation; the old has passed away, and see, the new has come!" 
+}, {
+    "startDate": "2019-11-03",
+    "endDate": "2019-11-10",
+    "reference": "Isaiah 40:28",
+    "text": "Do you not know? Have you not heard? The LORD is the everlasting God, the Creator of the whole earth. He never becomes faint or weary; there is no limit to his understanding."
+}, {
+    "startDate": "2019-11-10",
+    "endDate": "2019-11-17",
+    "reference": "Isaiah 40:30-31",
+    "text": "Youths may become faint and weary, and young men stumble and fall, but those who trust in the LORD will renew their strength; they will soar on wings like eagles; they will run and not become weary, they will walk and not faint."
+}, {
+    "startDate": "2019-11-17",
+    "endDate": "2019-11-24",
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you”—this is the LORD’s declaration—“plans for your well-being, not for disaster, to give you a future and a hope."
+}, {
+    "startDate": "2019-11-24",
+    "endDate": "2019-12-01",
+    "reference": "Romans 8:28",
+    "text": "We know that all things work together for the good of those who love God, who are called according to his purpose."
+}, {
+    "startDate": "2019-12-01",
+    "endDate": "2019-12-08",
+    "reference": "Philippians 4:19",
+    "text": "And my God will supply all your needs according to his riches in glory in Christ Jesus."
+}, {
+    "startDate": "2019-12-08",
+    "endDate": "2019-12-15",
+    "reference": "Romans 8:38-39",
+    "text": "For I am persuaded that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor any other created thing will be able to separate us from the love of God that is in Christ Jesus our Lord."
+}, {
+    "startDate": "2019-12-15",
+    "endDate": "2019-12-22",
+    "reference": "Matthew 11:28-30",
+    "text": "Come to me, all of you who are weary and burdened, and I will give you rest. Take up my yoke and learn from me, because I am lowly and humble in heart, and you will find rest for your souls. For my yoke is easy and my burden is light."
+}, {
+    "startDate": "2019-12-22",
+    "endDate": "2019-12-29",
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation— whom should I fear? The LORD is the stronghold of my life— whom should I dread?"
+}, {
+    "startDate": "2019-12-29",
+    "endDate": "2020-01-05",
+    "reference": "Joshua 1:9",
+    "text": "Haven’t I commanded you: be strong and courageous? Do not be afraid or discouraged, for the LORD your God is with you wherever you go."
+}, {
+    "startDate": "2020-01-05",
+    "endDate": "2020-01-12",
+    "reference": "Psalm 46:1",
+    "text": "God is our refuge and strength, a helper who is always found in times of trouble."
+}, {
+    "startDate": "2020-01-12",
+    "endDate": "2020-01-19",
+    "reference": "Hebrews 13:8",
+    "text": "Jesus Christ is the same yesterday, today, and forever."
+}, {
+    "startDate": "2020-01-19",
+    "endDate": "2020-01-26",
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all of you who are weary and burdened, and I will give you rest."
+}, {
+    "startDate": "2020-01-26",
+    "endDate": "2020-02-02",
+    "reference": "2 Timothy 3:16",
+    "text": "All Scripture is inspired by God and is profitable for teaching, for rebuking, for correcting, for training in righteousness,"
+}, {
+    "startDate": "2020-02-02",
+    "endDate": "2020-02-09",
+    "reference": "Psalm 119:105",
+    "text": "Your word is a lamp for my feet and a light on my path."
+}, {
+    "startDate": "2020-02-09",
+    "endDate": "2020-02-16",
+    "reference": "Psalm 119:11",
+    "text": "I have treasured your word in my heart so that I may not sin against you."
+}, {
+    "startDate": "2020-02-16",
+    "endDate": "2020-02-23",
+    "reference": "Joshua 1:8",
+    "text": "This book of instruction must not depart from your mouth; you are to meditate on it day and night so that you may carefully observe everything written in it. For then you will prosper and succeed in whatever you do."
+}, {
+    "startDate": "2020-02-23",
+    "endDate": "2020-03-01",
+    "reference": "Luke 1:37",
+    "text": "For nothing will be impossible with God.”"
+}, {
+    "startDate": "2020-03-01",
+    "endDate": "2020-03-08",
+    "reference": "Philippians 4:13",
+    "text": "I am able to do all things through him who strengthens me."
+}, {
+    "startDate": "2020-03-08",
+    "endDate": "2020-03-15",
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart, and do not rely on your own understanding; in all your ways know him, and he will make your paths straight."
+}, {
+    "startDate": "2020-03-15",
+    "endDate": "2020-03-22",
+    "reference": "Psalm 46:10",
+    "text": "Stop your fighting, and know that I am God, exalted among the nations, exalted on the earth."
+}, {
+    "startDate": "2020-03-22",
+    "endDate": "2020-03-29",
+    "reference": "1 Peter 1:6",
+    "text": "You rejoice in this, even though now for a short time, if necessary, you suffer grief in various trials"
+}, {
+    "startDate": "2020-03-29",
+    "endDate": "2020-04-05",
+    "reference": "James 1:17",
+    "text": "Every good and perfect gift is from above, coming down from the Father of lights, who does not change like shifting shadows."
+}, {
+    "startDate": "2020-04-05",
+    "endDate": "2020-04-12",
+    "reference": "Joshua 24:15b",
+    "text": "As for me and my family, we will worship the LORD."
+}, {
+    "startDate": "2020-04-12",
+    "endDate": "2020-04-19",
+    "reference": "1 Corinthians 10:23",
+    "text": "Everything is permissible,” but not everything is beneficial. “Everything is permissible,” but not everything builds up."
+}, {
+    "startDate": "2020-04-19",
+    "endDate": "2020-04-26",
+    "reference": "Matthew 22:37-39",
+    "text": "He said to him, “Love the Lord your God with all your heart, with all your soul, and with all your mind. This is the greatest and most important command. The second is like it: Love your neighbor as yourself."
+}, {
+    "startDate": "2020-04-26",
+    "endDate": "2020-05-03",
+    "reference": "1 Corinthians 13:4-7",
+    "text": "Love is patient, love is kind. Love does not envy, is not boastful, is not arrogant, is not rude, is not self-seeking, is not irritable, and does not keep a record of wrongs. Love finds no joy in unrighteousness but rejoices in the truth. It bears all things, believes all things, hopes all things, endures all things."
+}, {
+    "startDate": "2020-05-03",
+    "endDate": "2020-05-10",
+    "reference": "Matthew 25:40",
+    "text": "And the King will answer them, ‘Truly I tell you, whatever you did for one of the least of these brothers and sisters of mine, you did for me.’"
+}, {
+    "startDate": "2020-05-10",
+    "endDate": "2020-05-17",
+    "reference": "1 Corinthians 16:14",
+    "text": "Do everything in love."
+}, {
+    "startDate": "2020-05-17",
+    "endDate": "2020-05-24",
+    "reference": "Matthew 5:16",
+    "text": "In the same way, let your light shine before others, so that they may see your good works and give glory to your Father in heaven."
+}, {
+    "startDate": "2020-05-24",
+    "endDate": "2020-05-31",
+    "reference": "Micah 6:8",
+    "text": "Mankind, he has told each of you what is good and what it is the LORD requires of you: to act justly, to love faithfulness, and to walk humbly with your God."
+}, {
+    "startDate": "2020-05-31",
+    "endDate": "2020-06-07",
+    "reference": "Colossians 3:23",
+    "text": "Whatever you do, do it from the heart, as something done for the Lord and not for people,"
+}, {
+    "startDate": "2020-06-07",
+    "endDate": "2020-06-14",
+    "reference": "Galatians 5:22-23",
+    "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. The law is not against such things."
+}, {
+    "startDate": "2020-06-14",
+    "endDate": "2020-06-21",
+    "reference": "Romans 12:1-2",
+    "text": "Therefore, brothers and sisters, in view of the mercies of God, I urge you to present your bodies as a living sacrifice, holy and pleasing to God; this is your true worship. Do not be conformed to this age, but be transformed by the renewing of your mind, so that you may discern what is the good, pleasing, and perfect will of God."
+}, {
+    "startDate": "2020-06-28",
+    "endDate": "2020-07-05",
+    "reference": "1 Corinthians 10:13",
+    "text": "No temptation has come upon you except what is common to humanity. But God is faithful; he will not allow you to be tempted beyond what you are able, but with the temptation he will also provide the way out so that you may be able to bear it."
+}, {
+    "startDate": "2020-07-05",
+    "endDate": "2020-07-12",
+    "reference": "", 
+    "text": ""
+}, {
+    "startDate": "2020-07-12",
+    "endDate": "2020-07-19",
+    "reference": "Luke 6:31",
+    "text": "Just as you want others to do for you, do the same for them."
+}, {
+    "startDate": "2020-07-19",
+    "endDate": "2020-07-26",
+    "reference": "Ephesians 4:32",
+    "text": "And be kind and compassionate to one another, forgiving one another, just as God also forgave you in Christ."
+}, {
+    "startDate": "2020-07-26",
+    "endDate": "2020-08-02",
+    "reference": "Ephesians 4:29",
+    "text": "No foul language should come from your mouth, but only what is good for building up someone in need, so that it gives grace to those who hear."
+}, {
+    "startDate": "2020-08-02",
+    "endDate": "2020-08-09",
+    "reference": "1 Thessalonians 5:18",
+    "text": "give thanks in everything; for this is God’s will for you in Christ Jesus."
+}, {
+    "startDate": "2020-08-09",
+    "endDate": "2020-08-16",
+    "reference": "Psalm 107:1",
+    "text": "Give thanks to the LORD, for he is good; his faithful love endures forever."
+}, {
+    "startDate": "2020-08-16",
+    "endDate": "2020-08-23",
+    "reference": "Psalm 139:14",
+    "text": "I will praise you because I have been remarkably and wondrously made. Your works are wondrous, and I know this very well."
+}, {
+    "startDate": "2020-08-23",
+    "endDate": "2020-08-30",
+    "reference": "Philippians 4:6-7",
+    "text": "Don’t worry about anything, but in everything, through prayer and petition with thanksgiving, present your requests to God. And the peace of God, which surpasses all understanding, will guard your hearts and minds in Christ Jesus."
+}, {
+    "startDate": "2020-08-30",
+    "endDate": "2020-09-06",
+    "reference": "Psalm 145:18-19",
+    "text": "The LORD is near all who call out to him, all who call out to him with integrity. He fulfills the desires of those who fear him; he hears their cry for help and saves them."
+}, {
+    "startDate": "2020-09-06",
+    "endDate": "2020-09-13",
+    "reference": "1 Peter 5:7",
+    "text": "casting all your cares on him, because he cares about you."
+}, {
+    "startDate": "2020-09-13",
+    "endDate": "2020-09-20",
+    "reference": "1 John 5:12",
+    "text": "The one who has the Son has life. The one who does not have the Son of God does not have life."
+}, {
+    "startDate": "2020-09-20",
+    "endDate": "2020-09-27",
+    "reference": "James 4:7",
+    "text": "Therefore, submit to God. Resist the devil, and he will flee from you."
+}, {
+    "startDate": "2020-09-27",
+    "endDate": "2020-10-04",
+    "reference": "Proverbs 1:7",
+    "text": "The fear of the LORD is the beginning of knowledge; fools despise wisdom and discipline."
+}, {
+    "startDate": "2020-10-04",
+    "endDate": "2020-10-11",
+    "reference": "1 Timothy 4:12",
+    "text": "Don’t let anyone despise your youth, but set an example for the believers in speech, in conduct, in love, in faith, and in purity."
+}, {
+    "startDate": "2020-10-11",
+    "endDate": "2020-10-18",
+    "reference": "Galatians 5:22-23",
+    "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. The law is not against such things."
+}, {
+    "startDate": "2020-10-18",
+    "endDate": "2020-10-25",
+    "reference": "Philippians 4:8",
+    "text": "Finally brothers and sisters, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable—if there is any moral excellence and if there is anything praiseworthy—dwell on these things."
+}, {
+    "startDate": "2020-10-25",
+    "endDate": "2020-11-01",
+    "reference": "Ephesians 6:1-3",
+    "text": "Children, obey your parents in the Lord, because this is right. Honor your father and mother, which is the first commandment with a promise, so that it may go well with you and that you may have a long life in the land."
+}, {
+    "startDate": "2020-11-01",
+    "endDate": "2020-11-08",
+    "reference": "1 John 1:9",
+    "text": "If we confess our sins, he is faithful and righteous to forgive us our sins and to cleanse us from all unrighteousness."
+}, {
+    "startDate": "2020-11-08",
+    "endDate": "2020-11-15",
+    "reference": "Romans 8:1-2",
+    "text": "Therefore, there is now no condemnation for those in Christ Jesus, [2] because the law of the Spirit of life in Christ Jesus has set you free from the law of sin and death."
+}, {
+    "startDate": "2020-11-15",
+    "endDate": "2020-11-22",
+    "reference": "1 Peter 5:7",
+    "text": "casting all your cares on him, because he cares about you."
+}, {
+    "startDate": "2020-11-22",
+    "endDate": "2020-11-29",
+    "reference": "Proverbs 4:23",
+    "text": "Guard your heart above all else, for it is the source of life."
+}, {
+    "startDate": "2020-11-29",
+    "endDate": "2020-12-06",
+    "reference": "Joshua 1:9",
+    "text": "Haven’t I commanded you: be strong and courageous? Do not be afraid or discouraged, for the LORD your God is with you wherever you go.”"
+}, {
+    "startDate": "2020-12-06",
+    "endDate": "2020-12-13",
+    "reference": "Romans 12:1-2",
+    "text": "Therefore, brothers and sisters, in view of the mercies of God, I urge you to present your bodies as a living sacrifice, holy and pleasing to God; this is your true worship. Do not be conformed to this age, but be transformed by the renewing of your mind, so that you may discern what is the good, pleasing, and perfect will of God."
+}, {
+    "startDate": "2020-12-13",
+    "endDate": "2020-12-20",
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you”—this is the LORD’s declaration—“plans for your well-being, not for disaster, to give you a future and a hope."
+}, {
+    "startDate": "2020-12-20",
+    "endDate": "2020-12-27",
+    "reference": "Ephesians 6:10-11",
+    "text": "Finally, be strengthened by the Lord and by his vast strength. Put on the full armor of God so that you can stand against the schemes of the devil."
+}, {
+    "startDate": "2020-12-27",
+    "endDate": "2021-01-03",
+    "reference": "Isaiah 41:10",
+    "text": "Do not fear, for I am with you; do not be afraid, for I am your God. I will strengthen you; I will help you; I will hold on to you with my righteous right hand."
 }];
 
-family_reading = [{
-    'date': '2019-09-08',
-    'passage': 'Genesis 1'
-}, {
-    'date': '2019-09-09',
-    'passage': 'Matthew 1'
-}, {
-    'date': '2019-09-10',
-    'passage': 'Genesis 2'
-}, {
-    'date': '2019-09-11',
-    'passage': 'Matthew 2'
-}, {
-    'date': '2019-09-12',
-    'passage': 'Genesis 3'
-}, {
-    'date': '2019-09-13',
-    'passage': 'Matthew 3'
-}, {
-    'date': '2019-09-14',
-    'passage': 'Genesis 4'
-}, {
-    'date': '2019-09-15',
-    'passage': 'Matthew 4'
-}, {
-    'date': '2019-09-16',
-    'passage': 'Genesis 5'
-}, {
-    'date': '2019-09-17',
-    'passage': 'Matthew 5'
-}, {
-    'date': '2019-09-18',
-    'passage': 'Genesis 6'
-}, {
-    'date': '2019-09-19',
-    'passage': 'Matthew 6'
-}, {
-    'date': '2019-09-20',
-    'passage': 'Genesis 7'
-}, {
-    'date': '2019-09-21',
-    'passage': 'Matthew 7'
-}, {
-    'date': '2019-09-22',
-    'passage': 'Genesis 8'
-}, {
-    'date': '2019-09-23',
-    'passage': 'Matthew 8'
-}, {
-    'date': '2019-09-24',
-    'passage': 'Genesis 9'
-}, {
-    'date': '2019-09-25',
-    'passage': 'Matthew 9'
-}, {
-    'date': '2019-09-26',
-    'passage': 'Genesis 10'
-}, {
-    'date': '2019-09-27',
-    'passage': 'Matthew 10'
-}, {
-    'date': '2019-09-28',
-    'passage': 'Genesis 11'
-}, {
-    'date': '2019-09-29',
-    'passage': 'Matthew 11'
-}, {
-    'date': '2019-09-30',
-    'passage': 'Genesis 12'
-}, {
-	'date': '2019-10-01',
-	'passage': 'Matthew 12'
-}, {
-	'date': '2019-10-02',
-	'passage': 'Genesis 13'
-}, {
-	'date': '2019-10-03',
-	'passage': 'Matthew 13'
-}, {
-	'date': '2019-10-04',
-	'passage': 'Genesis 14'
-}, {
-	'date': '2019-10-05',
-	'passage': 'Matthew 14'
-}, {
-	'date': '2019-10-06',
-	'passage': 'Genesis 15'
-}, {
-	'date': '2019-10-07',
-	'passage': 'Matthew 15'
-}, {
-	'date': '2019-10-08',
-	'passage': 'Genesis 16'
-}, {
-	'date': '2019-10-09',
-	'passage': 'Matthew 16'
-}, {
-	'date': '2019-10-10',
-	'passage': 'Genesis 17'
-}, {
-	'date': '2019-10-11',
-	'passage': 'Matthew 17'
-}, {
-	'date': '2019-10-12',
-	'passage': 'Genesis 18'
-}, {
-	'date': '2019-10-13',
-	'passage': 'Matthew 18'
-}, {
-	'date': '2019-10-14',
-	'passage': 'Genesis 19'
-}, {
-	'date': '2019-10-15',
-	'passage': 'Matthew 19'
-}, {
-	'date': '2019-10-16',
-	'passage': 'Genesis 20'
-}, {
-	'date': '2019-10-17',
-	'passage': 'Matthew 20'
-}, {
-	'date': '2019-10-18',
-	'passage': 'Genesis 21'
-}, {
-	'date': '2019-10-19',
-	'passage': 'Matthew 21'
-}, {
-	'date': '2019-10-20',
-	'passage': 'Genesis 22'
-}, {
-	'date': '2019-10-21',
-	'passage': 'Matthew 22'
-}, {
-	'date': '2019-10-22',
-	'passage': 'Genesis 23'
-}, {
-	'date': '2019-10-23',
-	'passage': 'Matthew 23'
-}, {
-	'date': '2019-10-24',
-	'passage': 'Genesis 24'
-}, {
-	'date': '2019-10-25',
-	'passage': 'Matthew 24'
-}, {
-	'date': '2019-10-26',
-	'passage': 'Genesis 25'
-}, {
-	'date': '2019-10-27',
-	'passage': 'Matthew 25'
-}, {
-	'date': '2019-10-28',
-	'passage': 'Genesis 26'
-}, {
-	'date': '2019-10-29',
-	'passage': 'Matthew 26'
-}, {
-	'date': '2019-10-30',
-	'passage': 'Genesis 27'
-}, {
-	'date': '2019-10-31',
-	'passage': 'Matthew 27'
-}];
+family_reading = [
+	{'date': '2019-09-08', 'passage': 'Genesis 1'},
+	{'date': '2019-09-09', 'passage': 'Matthew 1'},
+	{'date': '2019-09-10', 'passage': 'Genesis 2'},
+	{'date': '2019-09-11', 'passage': 'Matthew 2'},
+	{'date': '2019-09-12', 'passage': 'Genesis 3'},
+	{'date': '2019-09-13', 'passage': 'Matthew 3'},
+	{'date': '2019-09-14', 'passage': 'Genesis 4'},
+	{'date': '2019-09-15', 'passage': 'Matthew 4'},
+	{'date': '2019-09-16', 'passage': 'Genesis 5'},
+	{'date': '2019-09-17', 'passage': 'Matthew 5'},
+	{'date': '2019-09-18', 'passage': 'Genesis 6'},
+	{'date': '2019-09-19', 'passage': 'Matthew 6'},
+	{'date': '2019-09-20', 'passage': 'Genesis 7'},
+	{'date': '2019-09-21', 'passage': 'Matthew 7'},
+	{'date': '2019-09-22', 'passage': 'Genesis 8'},
+	{'date': '2019-09-23', 'passage': 'Matthew 8'},
+	{'date': '2019-09-24', 'passage': 'Genesis 9'},
+	{'date': '2019-09-25', 'passage': 'Matthew 9'},
+	{'date': '2019-09-26', 'passage': 'Genesis 10'},
+	{'date': '2019-09-27', 'passage': 'Matthew 10'},
+	{'date': '2019-09-28', 'passage': 'Genesis 11'},
+	{'date': '2019-09-29', 'passage': 'Matthew 11'},
+	{'date': '2019-09-30', 'passage': 'Genesis 12'},
+	{'date': '2019-10-01', 'passage': 'Matthew 12'},
+	{'date': '2019-10-02', 'passage': 'Genesis 13'},
+	{'date': '2019-10-03', 'passage': 'Matthew 13'},
+	{'date': '2019-10-04', 'passage': 'Genesis 14'},
+	{'date': '2019-10-05', 'passage': 'Matthew 14'},
+	{'date': '2019-10-06', 'passage': 'Genesis 15'},
+	{'date': '2019-10-07', 'passage': 'Matthew 15'},
+	{'date': '2019-10-08', 'passage': 'Genesis 16'},
+	{'date': '2019-10-09', 'passage': 'Matthew 16'},
+	{'date': '2019-10-10', 'passage': 'Genesis 17'},
+	{'date': '2019-10-11', 'passage': 'Matthew 17'},
+	{'date': '2019-10-12', 'passage': 'Genesis 18'},
+	{'date': '2019-10-13', 'passage': 'Matthew 18'},
+	{'date': '2019-10-14', 'passage': 'Genesis 19'},
+	{'date': '2019-10-15', 'passage': 'Matthew 19'},
+	{'date': '2019-10-16', 'passage': 'Genesis 20'},
+	{'date': '2019-10-17', 'passage': 'Matthew 20'},
+	{'date': '2019-10-18', 'passage': 'Genesis 21'},
+	{'date': '2019-10-19', 'passage': 'Matthew 21'},
+	{'date': '2019-10-20', 'passage': 'Genesis 22'},
+	{'date': '2019-10-21', 'passage': 'Matthew 22'},
+	{'date': '2019-10-22', 'passage': 'Genesis 23'},
+	{'date': '2019-10-23', 'passage': 'Matthew 23'},
+	{'date': '2019-10-24', 'passage': 'Genesis 24'},
+	{'date': '2019-10-25', 'passage': 'Matthew 24'},
+	{'date': '2019-10-26', 'passage': 'Genesis 25'},
+	{'date': '2019-10-27', 'passage': 'Matthew 25'},
+	{'date': '2019-10-28', 'passage': 'Genesis 26'},
+	{'date': '2019-10-29', 'passage': 'Matthew 26'},
+	{'date': '2019-10-30', 'passage': 'Genesis 27'},
+	{'date': '2019-10-31', 'passage': 'Matthew 27'},
+	{'date': '2019-11-01', 'passage': 'Genesis 28'},
+	{'date': '2019-11-02', 'passage': 'Matthew 28'},
+	{'date': '2019-11-03', 'passage': 'Genesis 29'},
+	{'date': '2019-11-04', 'passage': 'Acts 1'},
+	{'date': '2019-11-05', 'passage': 'Genesis 30'},
+	{'date': '2019-11-06', 'passage': 'Acts 2'},
+	{'date': '2019-11-07', 'passage': 'Genesis 31'},
+	{'date': '2019-11-08', 'passage': 'Acts 3'},
+	{'date': '2019-11-09', 'passage': 'Genesis 32'},
+	{'date': '2019-11-10', 'passage': 'Acts 4'},
+	{'date': '2019-11-11', 'passage': 'Genesis 33'},
+	{'date': '2019-11-12', 'passage': 'Acts 5'},
+	{'date': '2019-11-13', 'passage': 'Genesis 34'},
+	{'date': '2019-11-14', 'passage': 'Acts 6'},
+	{'date': '2019-11-15', 'passage': 'Genesis 35'},
+	{'date': '2019-11-16', 'passage': 'Acts 7'},
+	{'date': '2019-11-17', 'passage': 'Genesis 36'},
+	{'date': '2019-11-18', 'passage': 'Acts 8'},
+	{'date': '2019-11-19', 'passage': 'Genesis 37'},
+	{'date': '2019-11-20', 'passage': 'Acts 9'},
+	{'date': '2019-11-21', 'passage': 'Genesis 38'},
+	{'date': '2019-11-22', 'passage': 'Acts 10'},
+	{'date': '2019-11-23', 'passage': 'Genesis 39'},
+	{'date': '2019-11-24', 'passage': 'Acts 11'},
+	{'date': '2019-11-25', 'passage': 'Genesis 40'},
+	{'date': '2019-11-26', 'passage': 'Acts 12'},
+	{'date': '2019-11-27', 'passage': 'Genesis 41'},
+	{'date': '2019-11-28', 'passage': 'Acts 13'},
+	{'date': '2019-11-29', 'passage': 'Genesis 42'},
+	{'date': '2019-11-30', 'passage': 'Acts 14'},
+	{'date': '2019-12-01', 'passage': 'Genesis 43'},
+	{'date': '2019-12-02', 'passage': 'Acts 15'},
+	{'date': '2019-12-03', 'passage': 'Genesis 44'},
+	{'date': '2019-12-04', 'passage': 'Acts 15'},
+	{'date': '2019-12-05', 'passage': 'Genesis 45'},
+	{'date': '2019-12-06', 'passage': 'Acts 16'},
+	{'date': '2019-12-07', 'passage': 'Genesis 46'},
+	{'date': '2019-12-08', 'passage': 'Acts 17'},
+	{'date': '2019-12-09', 'passage': 'Genesis 47'},
+	{'date': '2019-12-10', 'passage': 'Acts 18'},
+	{'date': '2019-12-11', 'passage': 'Genesis 48'},
+	{'date': '2019-12-12', 'passage': 'Acts 19'},
+	{'date': '2019-12-13', 'passage': 'Genesis 49'},
+	{'date': '2019-12-14', 'passage': 'Acts 20'},
+	{'date': '2019-12-15', 'passage': 'Genesis 50'},
+	{'date': '2019-12-16', 'passage': 'Acts 21'},
+	{'date': '2019-12-17', 'passage': 'Joshua 1'},
+	{'date': '2019-12-18', 'passage': 'Acts 22'},
+	{'date': '2019-12-19', 'passage': 'Joshua 2'},
+	{'date': '2019-12-20', 'passage': 'Acts 23'},
+	{'date': '2019-12-21', 'passage': 'Joshua 3'},
+	{'date': '2019-12-22', 'passage': 'Acts 24'},
+	{'date': '2019-12-23', 'passage': 'Joshua 4'},
+	{'date': '2019-12-24', 'passage': 'Acts 25'},
+	{'date': '2019-12-25', 'passage': 'Joshua 5'},
+	{'date': '2019-12-26', 'passage': 'Acts 26'},
+	{'date': '2019-12-27', 'passage': 'Joshua 6'},
+	{'date': '2019-12-28', 'passage': 'Acts 27'},
+	{'date': '2019-12-29', 'passage': 'Joshua 7'},
+	{'date': '2019-12-30', 'passage': 'Acts 28'},
+	{'date': '2019-12-31', 'passage': 'Joshua 8'},
+	{'date': '2020-01-01', 'passage': 'Romans 1'},
+	{'date': '2020-01-02', 'passage': 'Joshua 9'},
+	{'date': '2020-01-03', 'passage': 'Romans 2'},
+	{'date': '2020-01-04', 'passage': 'Joshua 10'},
+	{'date': '2020-01-05', 'passage': 'Romans 3'},
+	{'date': '2020-01-06', 'passage': 'Joshua 11'},
+	{'date': '2020-01-07', 'passage': 'Romans 4'},
+	{'date': '2020-01-08', 'passage': 'Joshua 12'},
+	{'date': '2020-01-09', 'passage': 'Romans 5'},
+	{'date': '2020-01-10', 'passage': 'Joshua 13'},
+	{'date': '2020-01-11', 'passage': 'Romans 6'},
+	{'date': '2020-01-12', 'passage': 'Joshua 14'},
+	{'date': '2020-01-13', 'passage': 'Romans 7'},
+	{'date': '2020-01-14', 'passage': 'Joshua 15'},
+	{'date': '2020-01-15', 'passage': 'Romans 8'},
+	{'date': '2020-01-16', 'passage': 'Joshua 16'},
+	{'date': '2020-01-17', 'passage': 'Romans 9'},
+	{'date': '2020-01-18', 'passage': 'Joshua 17'},
+	{'date': '2020-01-19', 'passage': 'Romans 10'},
+	{'date': '2020-01-20', 'passage': 'Joshua 18'},
+	{'date': '2020-01-21', 'passage': 'Romans 11'},
+	{'date': '2020-01-22', 'passage': 'Joshua 19'},
+	{'date': '2020-01-23', 'passage': 'Romans 12'},
+	{'date': '2020-01-24', 'passage': 'Joshua 20'},
+	{'date': '2020-01-25', 'passage': 'Romans 13'},
+	{'date': '2020-01-26', 'passage': 'Joshua 21'},
+	{'date': '2020-01-27', 'passage': 'Romans 14'},
+	{'date': '2020-01-28', 'passage': 'Joshua 22'},
+	{'date': '2020-01-29', 'passage': 'Romans 15'},
+	{'date': '2020-01-30', 'passage': 'Joshua 23'},
+	{'date': '2020-01-31', 'passage': 'Romans 16'},
+	{'date': '2020-02-01', 'passage': 'Joshua 24'},
+	{'date': '2020-02-02', 'passage': 'Revelation 1'},
+	{'date': '2020-02-03', 'passage': 'Job 1'},
+	{'date': '2020-02-04', 'passage': 'Revelation 2'},
+	{'date': '2020-02-05', 'passage': 'Job 2'},
+	{'date': '2020-02-06', 'passage': 'Revelation 3'},
+	{'date': '2020-02-07', 'passage': 'Job 3'},
+	{'date': '2020-02-08', 'passage': 'Revelation 4'},
+	{'date': '2020-02-09', 'passage': 'Job 4'},
+	{'date': '2020-02-10', 'passage': 'Revelation 5'},
+	{'date': '2020-02-11', 'passage': 'Job 5'},
+	{'date': '2020-02-12', 'passage': 'Revelation 6'},
+	{'date': '2020-02-13', 'passage': 'Job 6'},
+	{'date': '2020-02-14', 'passage': 'Revelation 7'},
+	{'date': '2020-02-15', 'passage': 'Job 7'},
+	{'date': '2020-02-16', 'passage': 'Revelation 8'},
+	{'date': '2020-02-17', 'passage': 'Job 8'},
+	{'date': '2020-02-18', 'passage': 'Revelation 9'},
+	{'date': '2020-02-19', 'passage': 'Job 9'},
+	{'date': '2020-02-20', 'passage': 'Revelation 10'},
+	{'date': '2020-02-21', 'passage': 'Job 10'},
+	{'date': '2020-02-22', 'passage': 'Revelation 11'},
+	{'date': '2020-02-23', 'passage': 'Job 11'},
+	{'date': '2020-02-24', 'passage': 'Revelation 12'},
+	{'date': '2020-02-25', 'passage': 'Job 12'},
+	{'date': '2020-02-26', 'passage': 'Revelation 13'},
+	{'date': '2020-02-27', 'passage': 'Job 13'},
+	{'date': '2020-02-28', 'passage': 'Revelation 14'},
+	{'date': '2020-03-19', 'passage': 'Job 14'},
+	{'date': '2020-03-20', 'passage': 'Revelation 15'},
+	{'date': '2020-03-21', 'passage': 'Job 15'},
+	{'date': '2020-03-22', 'passage': 'Revelation 16'},
+	{'date': '2020-03-23', 'passage': 'Job 16'},
+	{'date': '2020-03-24', 'passage': 'Revelation 17'},
+	{'date': '2020-03-25', 'passage': 'Job 17'},
+	{'date': '2020-03-26', 'passage': 'Revelation 18'},
+	{'date': '2020-03-27', 'passage': 'Job 18'},
+	{'date': '2020-03-28', 'passage': 'Revelation 20'},
+	{'date': '2020-03-29', 'passage': 'Job 19'},
+	{'date': '2020-03-30', 'passage': 'Revelation 21'},
+	{'date': '2020-03-31', 'passage': 'Job 20'},
+	{'date': '2020-04-01', 'passage': 'Revelation 22'},
+	{'date': '2020-04-02', 'passage': 'Job 21'},
+	{'date': '2020-04-03', 'passage': 'Mark 1'},
+	{'date': '2020-04-04', 'passage': 'Job 22'},
+	{'date': '2020-04-05', 'passage': 'Mark 2'},
+	{'date': '2020-04-06', 'passage': 'Job 23'},
+	{'date': '2020-04-07', 'passage': 'Mark 3'},
+	{'date': '2020-04-08', 'passage': 'Job 24'},
+	{'date': '2020-04-09', 'passage': 'Mark 4'},
+	{'date': '2020-04-10', 'passage': 'Job 25'},
+	{'date': '2020-04-11', 'passage': 'Mark 5'},
+	{'date': '2020-04-12', 'passage': 'Job 26'},
+	{'date': '2020-04-13', 'passage': 'Mark 6'},
+	{'date': '2020-04-14', 'passage': 'Job 27'},
+	{'date': '2020-04-15', 'passage': 'Mark 7'},
+	{'date': '2020-04-16', 'passage': 'Job 28'},
+	{'date': '2020-04-17', 'passage': 'Mark 8'},
+	{'date': '2020-04-18', 'passage': 'Job 29'},
+	{'date': '2020-04-19', 'passage': 'Mark 9'},
+	{'date': '2020-04-20', 'passage': 'Job 30'},
+	{'date': '2020-04-21', 'passage': 'Mark 10'},
+	{'date': '2020-04-22', 'passage': 'Job 31'},
+	{'date': '2020-04-23', 'passage': 'Mark 11'},
+	{'date': '2020-04-24', 'passage': 'Job 32'},
+	{'date': '2020-04-25', 'passage': 'Mark 12'},
+	{'date': '2020-04-26', 'passage': 'Job 33'},
+	{'date': '2020-04-27', 'passage': 'Mark 13'},
+	{'date': '2020-04-28', 'passage': 'Job 34'},
+	{'date': '2020-04-29', 'passage': 'Mark 14'},
+	{'date': '2020-04-30', 'passage': 'Job 35'},
+	{'date': '2020-05-01', 'passage': 'Mark 15'},
+	{'date': '2020-05-02', 'passage': 'Job 36'},
+	{'date': '2020-05-03', 'passage': 'Mark 16'},
+	{'date': '2020-05-04', 'passage': 'Job 37'},
+	{'date': '2020-05-05', 'passage': '1 Corinthians 1'},
+	{'date': '2020-05-06', 'passage': 'Job 38'},
+	{'date': '2020-05-07', 'passage': '1 Corinthians 2'},
+	{'date': '2020-05-08', 'passage': 'Job 39'},
+	{'date': '2020-05-09', 'passage': '1 Corinthians 3'},
+	{'date': '2020-05-10', 'passage': 'Job 40'},
+	{'date': '2020-05-11', 'passage': '1 Corinthians 4'},
+	{'date': '2020-05-12', 'passage': 'Job 41'},
+	{'date': '2020-05-13', 'passage': '1 Corinthians 5'},
+	{'date': '2020-05-14', 'passage': 'Job 42'},
+	{'date': '2020-05-15', 'passage': '1 Corinthians 6'},
+	{'date': '2020-05-16', 'passage': 'Isaiah 1'},
+	{'date': '2020-05-17', 'passage': '1 Corinthians 7'},
+	{'date': '2020-05-18', 'passage': 'Isaiah 2'},
+	{'date': '2020-05-19', 'passage': '1 Corinthians 8'},
+	{'date': '2020-05-20', 'passage': 'Isaiah 3'},
+	{'date': '2020-05-21', 'passage': '1 Corinthians 9'},
+	{'date': '2020-05-22', 'passage': 'Isaiah 4'},
+	{'date': '2020-05-23', 'passage': '1 Corinthians 10'},
+	{'date': '2020-05-24', 'passage': 'Isaiah 5'},
+	{'date': '2020-05-25', 'passage': '1 Corinthians 11'},
+	{'date': '2020-05-26', 'passage': 'Isaiah 6'},
+	{'date': '2020-05-27', 'passage': '1 Corinthians 12'},
+	{'date': '2020-05-28', 'passage': 'Isaiah 7'},
+	{'date': '2020-05-29', 'passage': '1 Corinthians 13'},
+	{'date': '2020-05-30', 'passage': 'Isaiah 8'},
+	{'date': '2020-05-31', 'passage': '1 Corinthians 14'},
+	{'date': '2020-06-01', 'passage': 'Isaiah 9'},
+	{'date': '2020-06-02', 'passage': '1 Corinthians 15'},
+	{'date': '2020-06-03', 'passage': 'Isaiah 10'},
+	{'date': '2020-06-04', 'passage': '1 Corinthians 16'},
+	{'date': '2020-06-05', 'passage': 'Isaiah 11'},
+	{'date': '2020-06-06', 'passage': 'Luke 1'},
+	{'date': '2020-06-07', 'passage': 'Isaiah 12'},
+	{'date': '2020-06-08', 'passage': 'Luke 2'},
+	{'date': '2020-06-09', 'passage': 'Isaiah 13'},
+	{'date': '2020-06-10', 'passage': 'Luke 3'},
+	{'date': '2020-06-11', 'passage': 'Isaiah 14'},
+	{'date': '2020-06-12', 'passage': 'Luke 4'},
+	{'date': '2020-06-13', 'passage': 'Isaiah 15'},
+	{'date': '2020-06-14', 'passage': 'Luke 5'},
+	{'date': '2020-06-15', 'passage': 'Isaiah 16'},
+	{'date': '2020-06-16', 'passage': 'Luke 6'},
+	{'date': '2020-06-17', 'passage': 'Isaiah 17'},
+	{'date': '2020-06-18', 'passage': 'Luke 7'},
+	{'date': '2020-06-19', 'passage': 'Isaiah 18'},
+	{'date': '2020-06-20', 'passage': 'Luke 8'},
+	{'date': '2020-06-21', 'passage': 'Isaiah 19'},
+	{'date': '2020-06-22', 'passage': 'Luke 9'},
+	{'date': '2020-06-23', 'passage': 'Isaiah 20'},
+	{'date': '2020-06-24', 'passage': 'Luke 10'},
+	{'date': '2020-06-25', 'passage': 'Isaiah 21'},
+	{'date': '2020-06-26', 'passage': 'Luke 11'},
+	{'date': '2020-06-27', 'passage': 'Isaiah 22'},
+	{'date': '2020-06-28', 'passage': 'Luke 12'},
+	{'date': '2020-06-29', 'passage': 'Isaiah 23'},
+	{'date': '2020-06-30', 'passage': 'Luke 13'},
+	{'date': '2020-07-01', 'passage': 'Isaiah 24'},
+	{'date': '2020-07-02', 'passage': 'Luke 14'},
+	{'date': '2020-07-03', 'passage': 'Isaiah 25'},
+	{'date': '2020-07-04', 'passage': 'Luke 15'},
+	{'date': '2020-07-05', 'passage': 'Isaiah 26'},
+	{'date': '2020-07-06', 'passage': 'Luke 16'},
+	{'date': '2020-07-07', 'passage': 'Isaiah 27'},
+	{'date': '2020-07-08', 'passage': 'Luke 17'},
+	{'date': '2020-07-09', 'passage': 'Isaiah 28'},
+	{'date': '2020-07-10', 'passage': 'Luke 18'},
+	{'date': '2020-07-11', 'passage': 'Isaiah 29'},
+	{'date': '2020-07-12', 'passage': 'Luke 19'},
+	{'date': '2020-07-13', 'passage': 'Isaiah 30'},
+	{'date': '2020-07-14', 'passage': 'Luke 20'},
+	{'date': '2020-07-15', 'passage': 'Isaiah 31'},
+	{'date': '2020-07-16', 'passage': 'Luke 21'},
+	{'date': '2020-07-17', 'passage': 'Isaiah 32'},
+	{'date': '2020-07-18', 'passage': 'Luke 22'},
+	{'date': '2020-07-19', 'passage': 'Isaiah 33'},
+	{'date': '2020-07-20', 'passage': 'Luke 23'},
+	{'date': '2020-07-21', 'passage': 'Isaiah 34'},
+	{'date': '2020-07-22', 'passage': 'Luke 24'},
+	{'date': '2020-07-23', 'passage': 'Isaiah 35'},
+	{'date': '2020-07-24', 'passage': '2 Corinthains 1'},
+	{'date': '2020-07-25', 'passage': 'Isaiah 36'},
+	{'date': '2020-07-26', 'passage': '2 Corinthians 2'},
+	{'date': '2020-07-27', 'passage': 'Isaiah 37'},
+	{'date': '2020-07-28', 'passage': '2 Corinthains 3'},
+	{'date': '2020-07-29', 'passage': 'Isaiah 38'},
+	{'date': '2020-07-30', 'passage': '2 Corinthains 4'},
+	{'date': '2020-07-31', 'passage': 'Isaiah 39'},
+	{'date': '2020-08-01', 'passage': '2 Corinthians 5'},
+	{'date': '2020-08-02', 'passage': 'Isaiah 40'},
+	{'date': '2020-08-03', 'passage': '2 Corinthians 6'},
+	{'date': '2020-08-04', 'passage': 'Isaiah 41'},
+	{'date': '2020-08-05', 'passage': '2 Corinthians 7'},
+	{'date': '2020-08-06', 'passage': 'Isaiah 42'},
+	{'date': '2020-08-07', 'passage': '2 Corinthians 8'},
+	{'date': '2020-08-08', 'passage': 'Isaiah 43'},
+	{'date': '2020-08-09', 'passage': '2 Corinthians 9'},
+	{'date': '2020-08-10', 'passage': 'Isaiah 44'},
+	{'date': '2020-08-11', 'passage': '2 Corinthians 10'},
+	{'date': '2020-08-12', 'passage': 'Isaiah 45'},
+	{'date': '2020-08-13', 'passage': '2 Corinthians 11'},
+	{'date': '2020-08-14', 'passage': 'Isaiah 46'},
+	{'date': '2020-08-15', 'passage': '2 Corinthians 12'},
+	{'date': '2020-08-16', 'passage': 'Isaiah 47'},
+	{'date': '2020-08-17', 'passage': '2 Corinthians 13'},
+	{'date': '2020-08-18', 'passage': 'Isaiah 48'},
+	{'date': '2020-08-19', 'passage': 'John 1'},
+	{'date': '2020-08-20', 'passage': 'Isaiah 49'},
+	{'date': '2020-08-21', 'passage': 'John 2'},
+	{'date': '2020-08-22', 'passage': 'Isaiah 50'},
+	{'date': '2020-08-23', 'passage': 'John 3'},
+	{'date': '2020-08-24', 'passage': 'Isaiah 51'},
+	{'date': '2020-08-25', 'passage': 'John 4'},
+	{'date': '2020-08-26', 'passage': 'Isaiah 52'},
+	{'date': '2020-08-27', 'passage': 'John 5'},
+	{'date': '2020-08-28', 'passage': 'Isaiah 53'},
+	{'date': '2020-08-29', 'passage': 'John 6'},
+	{'date': '2020-08-30', 'passage': 'Isaiah 54'},
+	{'date': '2020-08-31', 'passage': 'John 7'},
+	{'date': '2020-09-01', 'passage': 'Isaiah 55'},
+	{'date': '2020-09-02', 'passage': 'John 8'},
+	{'date': '2020-09-03', 'passage': 'Isaiah 56'},
+	{'date': '2020-09-04', 'passage': 'John 9'},
+	{'date': '2020-09-05', 'passage': 'Isaiah 57'},
+	{'date': '2020-09-06', 'passage': 'John 10'},
+	{'date': '2020-09-07', 'passage': 'Isaiah 58'},
+	{'date': '2020-09-08', 'passage': 'John 11'},
+	{'date': '2020-09-09', 'passage': 'Isaiah 59'},
+	{'date': '2020-09-10', 'passage': 'John 12'},
+	{'date': '2020-09-11', 'passage': 'Isaiah 60'},
+	{'date': '2020-09-12', 'passage': 'John 13'},
+	{'date': '2020-09-13', 'passage': 'Isaiah 61'},
+	{'date': '2020-09-14', 'passage': 'John 14'},
+	{'date': '2020-09-15', 'passage': 'Isaiah 62'},
+	{'date': '2020-09-16', 'passage': 'John 15'},
+	{'date': '2020-09-17', 'passage': 'Isaiah 63'},
+	{'date': '2020-09-18', 'passage': 'John 16'},
+	{'date': '2020-09-19', 'passage': 'Isaiah 64'},
+	{'date': '2020-09-20', 'passage': 'John 17'},
+	{'date': '2020-09-21', 'passage': 'Isaiah 65'},
+	{'date': '2020-09-22', 'passage': 'John 18'},
+	{'date': '2020-09-23', 'passage': 'Isaiah 66'},
+	{'date': '2020-09-24', 'passage': 'John 19'},
+	{'date': '2020-09-25', 'passage': 'Exodus 1'},
+	{'date': '2020-09-26', 'passage': 'John 20'},
+	{'date': '2020-09-27', 'passage': 'Exodus 2'},
+	{'date': '2020-09-28', 'passage': 'John 21'},
+	{'date': '2020-09-29', 'passage': 'Exodus 3'},
+	{'date': '2020-09-30', 'passage': 'Galatians 1'},
+	{'date': '2020-10-01', 'passage': 'Exodus 4'},
+	{'date': '2020-10-02', 'passage': 'Galatians 2'},
+	{'date': '2020-10-03', 'passage': 'Exodus 5'},
+	{'date': '2020-10-04', 'passage': 'Galatians 3'},
+	{'date': '2020-10-05', 'passage': 'Exodus 6'},
+	{'date': '2020-10-06', 'passage': 'Galatians 4'},
+	{'date': '2020-10-07', 'passage': 'Exodus 7'},
+	{'date': '2020-10-08', 'passage': 'Galatians 5'},
+	{'date': '2020-10-09', 'passage': 'Exodus 8'},
+	{'date': '2020-10-10', 'passage': 'Galatians 6'},
+	{'date': '2020-10-11', 'passage': 'Exodus 9'},
+	{'date': '2020-10-12', 'passage': 'Ephesians 1'},
+	{'date': '2020-10-13', 'passage': 'Exodus 10'},
+	{'date': '2020-10-14', 'passage': 'Ephesians 2'},
+	{'date': '2020-10-15', 'passage': 'Exodus 11'},
+	{'date': '2020-10-16', 'passage': 'Ephesians 3'},
+	{'date': '2020-10-17', 'passage': 'Exodus 12'},
+	{'date': '2020-10-18', 'passage': 'Ephesians 4'},
+	{'date': '2020-10-19', 'passage': 'Exodus 13'},
+	{'date': '2020-10-20', 'passage': 'Ephesians 5'},
+	{'date': '2020-10-21', 'passage': 'Exodus 14'},
+	{'date': '2020-10-22', 'passage': 'Ephesians 6'},
+	{'date': '2020-10-23', 'passage': 'Exodus 15'},
+	{'date': '2020-10-24', 'passage': 'Philippians 1'},
+	{'date': '2020-10-25', 'passage': 'Exodus 16'},
+	{'date': '2020-10-26', 'passage': 'Philippians 2'},
+	{'date': '2020-10-27', 'passage': 'Exodus 17'},
+	{'date': '2020-10-28', 'passage': 'Philippians 3'},
+	{'date': '2020-10-29', 'passage': 'Exodus 18'},
+	{'date': '2020-10-30', 'passage': 'Philippians 4'},
+	{'date': '2020-10-31', 'passage': 'Exodus 19'},
+	{'date': '2020-11-01', 'passage': 'Colossians 1'},
+	{'date': '2020-11-02', 'passage': 'Exodus 20'},
+	{'date': '2020-11-03', 'passage': 'Colossians 2'},
+	{'date': '2020-11-04', 'passage': 'Exodus 21'},
+	{'date': '2020-11-05', 'passage': 'Colossians 3'},
+	{'date': '2020-11-06', 'passage': 'Exodus 22'},
+	{'date': '2020-11-07', 'passage': 'Colossians 4'},
+	{'date': '2020-11-08', 'passage': 'Exodus 23'},
+	{'date': '2020-11-09', 'passage': '1 Thessalonians 1'},
+	{'date': '2020-11-10', 'passage': 'Exodus 24'},
+	{'date': '2020-11-11', 'passage': '1 Thessalonians 2'},
+	{'date': '2020-11-12', 'passage': 'Exodus 25'},
+	{'date': '2020-11-13', 'passage': '1 Thessalonians 3'},
+	{'date': '2020-11-14', 'passage': 'Exodus 26'},
+	{'date': '2020-11-15', 'passage': '1 Thessalonians 4'},
+	{'date': '2020-11-16', 'passage': 'Exodus 27'},
+	{'date': '2020-11-17', 'passage': '1 Thessalonians 5'},
+	{'date': '2020-11-18', 'passage': 'Exodus 28'},
+	{'date': '2020-11-19', 'passage': '2 Thessalonians 1'},
+	{'date': '2020-11-20', 'passage': 'Exodus 29'},
+	{'date': '2020-11-21', 'passage': '2 Thessalonians 2'},
+	{'date': '2020-11-22', 'passage': 'Exodus 30'},
+	{'date': '2020-11-23', 'passage': '2 Thessalonians 3'},
+	{'date': '2020-11-24', 'passage': 'Exodus 31'},
+	{'date': '2020-11-25', 'passage': '1 Timothy 1'},
+	{'date': '2020-11-26', 'passage': 'Exodus 32'},
+	{'date': '2020-11-27', 'passage': '1 Timothy 2'},
+	{'date': '2020-11-28', 'passage': 'Exodus 33'},
+	{'date': '2020-11-29', 'passage': '1 Timothy 3'},
+	{'date': '2020-11-30', 'passage': 'Exodus 34'},
+	{'date': '2020-12-01', 'passage': '1 Timothy 4'},
+	{'date': '2020-12-02', 'passage': 'Exodus 35'},
+	{'date': '2020-12-03', 'passage': '1 Timothy 5'},
+	{'date': '2020-12-04', 'passage': 'Exodus 36'},
+	{'date': '2020-12-05', 'passage': '1 Timothy 6'},
+	{'date': '2020-12-06', 'passage': 'Exodus 37'},
+	{'date': '2020-12-07', 'passage': '2 Timothy 1'},
+	{'date': '2020-12-08', 'passage': 'Exodus 38'},
+	{'date': '2020-12-09', 'passage': '2 Timothy 2'},
+	{'date': '2020-12-10', 'passage': 'Exodus 39'},
+	{'date': '2020-12-11', 'passage': '2 Timothy 3'},
+	{'date': '2020-12-12', 'passage': 'Exodus 40'},
+	{'date': '2020-12-13', 'passage': '2 Timothy 4'},
+	{'date': '2020-12-14', 'passage': 'Judges 1'},
+	{'date': '2020-12-15', 'passage': 'Titus 1'},
+	{'date': '2020-12-16', 'passage': 'Judges 2'},
+	{'date': '2020-12-17', 'passage': 'Titus 2'},
+	{'date': '2020-12-18', 'passage': 'Judges 3'},
+	{'date': '2020-12-19', 'passage': 'Titus 3'},
+	{'date': '2020-12-20', 'passage': 'Judges 4'},
+	{'date': '2020-12-21', 'passage': 'Philemon 1'},
+	{'date': '2020-12-22', 'passage': 'Judges 5'},
+	{'date': '2020-12-23', 'passage': 'Hebrews 1'},
+	{'date': '2020-12-24', 'passage': 'Judges 6'},
+	{'date': '2020-12-25', 'passage': 'Hebrews 2'},
+	{'date': '2020-12-26', 'passage': 'Judges 7'},
+	{'date': '2020-12-27', 'passage': 'Hebrews 3'},
+	{'date': '2020-12-28', 'passage': 'Judges 8'},
+	{'date': '2020-12-29', 'passage': 'Hebrews 4'},
+	{'date': '2020-12-30', 'passage': 'Judges 9'},
+	{'date': '2020-12-31', 'passage': 'Hebrews 5'}
+];
