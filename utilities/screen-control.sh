@@ -5,7 +5,7 @@
 
 echo `date` "Called with $1" >> ~/screen-control.log
 
-STATE=`/opt/vc/bin/tvservice -s`
+STATE=`vcgencmd display_power`
 
 if [ ! -z "$1" ] && [ $1 = "toggle" ]; then
 
@@ -16,12 +16,12 @@ if [ ! -z "$1" ] && [ $1 = "toggle" ]; then
 
     echo `date` "Screen is off, turning on."
     echo `date` "Screen is off, turning on." >> ~/screen-control.log
-    /opt/vc/bin/tvservice -p && fbset -depth 16 && fbset -depth 32 && xrefresh -display :0.0
+    vcgencmd display_power 1
   else
 
     echo `date` "Screen is on, turning off."
     echo `date` "Screen is on, turning off." >> ~/screen-control.log
-    /opt/vc/bin/tvservice -o
+    vcgencmd display_power 0
   fi
 
   # BUG: Not sure why, but if screen is on, and a toggle is triggered, context menu sometimes appears.
@@ -34,7 +34,7 @@ elif [ ! -z "$1" ] && [ $1 = "on" ]; then
 
     echo `date` "Screen is off, turning on."
     echo `date` "Screen is off, turning on." >> ~/screen-control.log
-    /opt/vc/bin/tvservice -p && fbset -depth 16 && fbset -depth 32 && xrefresh -display :0.0
+    vcgencmd display_power 1
   else
 
     echo `date` "Screen is on, doing nothing."
@@ -54,7 +54,7 @@ elif [ ! -z "$1" ] && [ $1 = "off" ]; then
   else
     echo `date` "Screen is on, turning off."
     echo `date` "Screen is on, turning off." >> ~/screen-control.log
-    /opt/vc/bin/tvservice -o
+    vcgencmd display_power 0
   fi
 
   # BUG: Not sure why, but if screen is on, and a toggle is triggered, context menu sometimes appears.
@@ -64,7 +64,7 @@ elif [ ! -z "$1" ] && [ $1 = "off" ]; then
 else
   # Print usage
   echo
-  /opt/vc/bin/tvservice -s
+  vcgencmd display_power
   echo
   echo usage:
   echo $0 on
