@@ -16,6 +16,18 @@
   <link rel="stylesheet" href="styles.css?v1.0">
 </head>
 <body onload="loadCalendarData()">
+  <script>
+    function imageRefresh(img, timeout) {
+      console.log("Updating image...");
+      setTimeout(function() {
+        var d = new Date;
+        var http  = img.src;
+        if (http.indexOf("&d=") != -1) { http = http.split("&d=")[0]; }
+        img.src = http + '&d=' + d.getTime();
+      }, timeout);
+    }
+  </script>
+
   <div class="container-fluid">
     <div class="row">
       <!-- LHS Column -->
@@ -41,13 +53,99 @@
           <div class="card-body" id="memoryVerse"></div>
         </div> 
         -->
+        <!--
         <div class="card border-0" style="margin: auto; text-align: center; width: 30vw; height: 245px;">
           <iframe style="align:left" id="forecast_embed" type="text/html" frameborder="0" 
                   style="width: 30vw;" height="245px" 
                   src="http://forecast.io/embed/#lat=35.973&lon=-83.9695&name=Knoxville&units=us"> </iframe>
         </div>
+      -->
+        <div id="openweathermap" class="card border-0" style="margin: auto; text-align: center; width: 30vw; height: 245px;">
+          <div id="forecast_embed" class="fe_container">
+            <div class="fe_forecast">
+              <div class="fe_currently">
+                <canvas id="fe_current_icon" width="160" height="160" style="width:80px; height:80px"></canvas>
+                <div id="fe_temp" class="fe_temp"></div>
+                <div id="fe_summary" class="fe_summary"></div>
+                <div id="fe_wind" class="fe_wind"></div>
+              </div>
+              <div class="fe_daily">
+                <div class="fe_day">
+                  <span id="fe_label0" class="fe_label"></span>
+                  <canvas class="fe_icon" width="52" height="52" style="width:26px; height:26px" id="fe_day_icon0"></canvas>
+                  <div id="fe_temp_bar0" class="fe_temp_bar" style="background-color: rgb(51, 51, 51);">
+                    <span class="fe_high_temp" id="fe_high_temp0"></span>
+                    <span class="fe_low_temp" id="fe_low_temp0"></span>
+                  </div>
+                </div>
+                <div class="fe_day">
+                  <span id="fe_label1" class="fe_label"></span>
+                  <canvas class="fe_icon" width="52" height="52" style="width:26px; height:26px" id="fe_day_icon1"></canvas>
+                  <div id="fe_temp_bar1" class="fe_temp_bar" style="background-color: rgb(51, 51, 51);">
+                    <span class="fe_high_temp" id="fe_high_temp1"></span>
+                    <span class="fe_low_temp" id="fe_low_temp1"></span>
+                  </div>
+                </div>
+                <div class="fe_day">
+                  <span id="fe_label2" class="fe_label"></span>
+                  <canvas class="fe_icon" width="52" height="52" style="width:26px; height:26px" id="fe_day_icon2"></canvas>
+                  <div id="fe_temp_bar2" class="fe_temp_bar" style="background-color: rgb(51, 51, 51);">
+                    <span class="fe_high_temp" id="fe_high_temp2"></span>
+                    <span class="fe_low_temp" id="fe_low_temp2"></span>
+                  </div>
+                </div>
+                <div class="fe_day">
+                  <span id="fe_label3" class="fe_label"></span>
+                  <canvas class="fe_icon" width="52" height="52" style="width:26px; height:26px" id="fe_day_icon3"></canvas>
+                  <div id="fe_temp_bar3" class="fe_temp_bar" style="background-color: rgb(51, 51, 51);">
+                    <span class="fe_high_temp" id="fe_high_temp3"></span>
+                    <span class="fe_low_temp" id="fe_low_temp3"></span>
+                  </div>
+                </div>
+                <div class="fe_day">
+                  <span id="fe_label4" class="fe_label"></span>
+                  <canvas class="fe_icon" width="52" height="52" style="width:26px; height:26px" id="fe_day_icon4"></canvas>
+                  <div id="fe_temp_bar4" class="fe_temp_bar" style="background-color: rgb(51, 51, 51);">
+                    <span class="fe_high_temp" id="fe_high_temp4"></span>
+                    <span class="fe_low_temp" id="fe_low_temp4"></span>
+                  </div>
+                </div>
+                <div class="fe_day">
+                  <span id="fe_label5" class="fe_label"></span>
+                  <canvas class="fe_icon" width="52" height="52" style="width:26px; height:26px" id="fe_day_icon5"></canvas>
+                  <div id="fe_temp_bar5" class="fe_temp_bar" style="background-color: rgb(51, 51, 51);">
+                    <span class="fe_high_temp" id="fe_high_temp5"></span>
+                    <span class="fe_low_temp" id="fe_low_temp5"></span>
+                  </div>
+                </div>
+                <div class="fe_day">
+                  <span id="fe_label6" class="fe_label"></span>
+                  <canvas class="fe_icon" width="52" height="52" style="width:26px; height:26px" id="fe_day_icon6"></canvas>
+                  <div id="fe_temp_bar6" class="fe_temp_bar" style="background-color: rgb(51, 51, 51);">
+                    <span class="fe_high_temp" id="fe_high_temp6"></span>
+                    <span class="fe_low_temp" id="fe_low_temp6"></span>
+                  </div>
+                </div>
+                <div class="fe_day">
+                  <span id="fe_label7" class="fe_label"></span>
+                  <canvas class="fe_icon" width="52" height="52" style="width:26px; height:26px" id="fe_day_icon7"></canvas>
+                  <div id="fe_temp_bar7" class="fe_temp_bar" style="background-color: rgb(51, 51, 51);">
+                    <span class="fe_high_temp" id="fe_high_temp7"></span>
+                    <span class="fe_low_temp" id="fe_low_temp7"></span>
+                  </div>
+                </div>
+              </div>
+              <div style="clear:left"></div>
+            </div>
+            <div class="fe_alert" style="display:none"></div>
+            <div class="fe_loading" style="display: none;">
+              <canvas id="fe_loading_icon" width="100" height="100" style="width:50px; height:50px"></canvas>
+              Loading...
+            </div>
+          </div>
+        </div>
         <div class="card border-0" style="margin: auto; text-align: center; width: 30vw;">
-          <img src="radar.png?t=1" onload='imageRefresh(this, 300000);'>
+          <img src="radar.png?t=1" onload="imageRefresh(this, 300000)">
         <div>
         <!--
         <div id="myPhotos" class="carousel slide lazy" data-ride="carousel" data-interval="10000">
@@ -178,8 +276,8 @@
           });
           myCalendar.render();
         });
-  
   </script>
+  <script src="skycons.js"></script>
   <script src="scripts.js"></script>
 </body>
 </html>

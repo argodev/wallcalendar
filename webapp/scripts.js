@@ -144,7 +144,7 @@ $(function () {
 
 function refreshTodaysAgenda() {
   var todayHtml = '';
-  console.log(agendaItems.length);
+  //console.log(agendaItems.length);
   // sort the items
   var x = agendaItems.sort(function (a, b) {
     // Turn your strings into dates, and then subtract them
@@ -163,7 +163,7 @@ function refreshTodaysAgenda() {
 
 
 parseHolidayData = function (data) {
-  console.log("Trying to do the holidays...")
+  //console.log("Trying to do the holidays...")
   holidayEvents = {
     events: []
   };
@@ -187,7 +187,7 @@ parseHolidayData = function (data) {
   const allEvents = [].concat(mappedEvents, mappedOccurrences);
 
   var count = allEvents.length;
-  console.log("Found " + String(count) + " holiday(s)");
+  //console.log("Found " + String(count) + " holiday(s)");
   if (count > 0) {
     // this is ephemeral... so we'll need to combine it if we get fancy
 
@@ -348,14 +348,173 @@ function checkTime(i) {
   return i;
 }
 
-function imageRefresh(img, timeout) {
-  console.log("Updating image...");
-  setTimeout(function() {
-    var d = new Date;
-    var http  = img.src;
-    if (http.indexOf("&d=") != -1) { http = http.split("&d=")[0]; }
-    img.src = http + '&d=' + d.getTime();
-  }, timeout);
+getWindDir = function(dir) {
+  var t=Math.round(dir/45);
+  return["N","NE","E","SE","S","SW","W","NW","N"][t];
+}
+
+getWxIcon = function(code) {
+  // Here's the available list from SKYCONS
+  // Skycons.CLEAR_DAY
+  // Skycons.CLEAR_NIGHT
+  // Skycons.PARTLY_CLOUDY_DAY
+  // Skycons.PARTLY_CLOUDY_NIGHT
+  // Skycons.CLOUDY
+  // Skycons.RAIN
+  // Skycons.SHOWERS_DAY
+  // Skycons.SHOWERS_NIGHT
+  // Skycons.SLEET
+  // Skycons.RAIN_SNOW
+  // Skycons.RAIN_SNOW_SHOWERS_DAY
+  // Skycons.RAIN_SNOW_SHOWERS_NIGHT
+  // Skycons.SNOW
+  // Skycons.SNOW_SHOWERS_DAY
+  // Skycons.SNOW_SHOWERS_NIGHT
+  // Skycons.WIND
+  // Skycons.FOG
+  // Skycons.THUNDER
+  // Skycons.THUNDER_RAIN
+  // Skycons.THUNDER_SHOWERS_DAY 
+  // Skycons.THUNDER_SHOWERS_NIGHT
+  // Skycons.HAIL
+  // 
+  // this is the list from openweathermap
+  //   01d.png 	01n.png 	clear sky
+  //   02d.png 	02n.png 	few clouds
+  //   03d.png 	03n.png 	scattered clouds
+  //   04d.png 	04n.png 	broken clouds
+  //   09d.png 	09n.png 	shower rain
+  //   10d.png 	10n.png 	rain
+  //   11d.png 	11n.png 	thunderstorm
+  //   13d.png 	13n.png 	snow
+  //   50d.png 	50n.png 	mist
+  var icon = Skycons.CLEAR_DAY;
+
+  switch (code) {
+    case '01d':
+      icon = Skycons.CLEAR_DAY;
+      break;
+    case '01n':
+      icon = Skycons.CLEAR_NIGHT;
+      break;
+    case '02d':
+       icon = Skycons.PARTLY_CLOUDY_DAY;
+       break;
+    case '02n':
+      icon = Skycons.PARTLY_CLOUDY_NIGHT;
+      break;
+    case '03d':
+      icon = Skycons.PARTLY_CLOUDY_DAY;
+      break;
+    case '03n':
+      icon = Skycons.PARTLY_CLOUDY_NIGHT;
+      break;
+    case '04d':
+      icon = Skycons.PARTLY_CLOUDY;
+      break;
+    case '04n':
+      icon = Skycons.PARTLY_CLOUDY;
+      break;
+    case '09d':
+      icon = Skycons.SHOWERS_DAY;
+      break;
+    case '09n':
+      icon = Skycons.SHOWERS_NIGHT;
+      break;
+    case '10d':
+      icon = Skycons.RAIN;
+      break;
+    case '10n':
+      icon = Skycons.RAIN;
+      break;
+    case '11d':
+      icon = Skycons.THUNDER_SHOWERS_DAY;
+      break;
+    case '11n':
+      icon = Skycons.THUNDER_SHOWERS_NIGHT;
+      break;
+    case '13d':
+      icon = Skycons.SNOW_SHOWERS_DAY;
+      break;
+    case '13n':
+      icon = Skycons.SNOW_SHOWERS_NIGHT;
+      break;
+    case '50d':
+      icon = Skycons.FOG;
+      break;
+    case '50n':
+      icon = Skycons.FOG;
+      break;
+    default:
+      icon = Skycons.CLEAR_DAY;
+      break;
+  }
+  return icon;
+}
+
+getWxDay = function(ndx) {
+  var today=(new Date).getDay()
+  var days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  return ndx==0?"Today":days[(today+ndx)%7];
+}
+
+updateCurrentWeather = function (data) {
+  //console.log("In updateCurrentWeather");
+ 
+  // prepare for the animated icons
+  var skycons=new Skycons({"color":"#333"});
+
+  // handle the current temperature and conditions
+  $("#fe_temp").text((Math.round(data.current.temp)).toString() + "\xB0");
+  $("#fe_summary").text(data.current.weather[0].main);
+  var wind = Math.round(data.current.wind_speed);
+  $("#fe_wind").text("Wind: " + wind.toString() + " mph (" + getWindDir(data.current.wind_deg) + ")");
+  skycons.add("fe_current_icon", getWxIcon(data.current.weather[0].icon));
+
+  // do some prep work to figure out how long each day's temperature
+  // spread bar should be
+  var numDays = data.daily.length;
+  var maxFound = -Infinity;
+  var minFound = Infinity;
+  for(var d=0; d < numDays; d++) {
+    var l = data.daily[d];
+    if (l.temp.max > maxFound) {
+      maxFound = l.temp.max;
+    }
+    if (l.temp.min < minFound) {
+      minFound = l.temp.min;
+    }
+  }
+ 
+  //console.log("Min: " + minFound.toString());
+  //console.log("Max: " + maxFound.toString());
+ 
+  var maxRange = 82; // this is dictated by the desired height
+  var actualRange = maxFound - minFound;
+  var height;
+  var top;
+  //console.log(actualRange);
+ 
+  // build out the forecast
+  var i = 0;
+  for (i = 0; i < 8; i++) {
+    var d = data.daily[i];
+    $("#fe_high_temp" + i.toString()).text(Math.round(d.temp.max).toString() + "\xB0");
+    $("#fe_low_temp" + i.toString()).text(Math.round(d.temp.min).toString() + "\xB0");
+    skycons.add("fe_day_icon" + i.toString(), getWxIcon(d.weather[0].icon));
+    $("#fe_label" + i.toString()).text(getWxDay(i));
+    height=(maxRange*(d.temp.max-d.temp.min)/actualRange).toFixed(4);
+    top=(maxRange*(maxFound-d.temp.max)/actualRange).toFixed(4);
+    //console.log(height.toString() + " / " + top.toString());
+    $("#fe_temp_bar" + i.toString()).css("height", height.toString() + "px");
+    $("#fe_temp_bar" + i.toString()).css("top", top.toString() + "px");
+
+    //height: 55.0914px; top: 7.58656px;
+    //nFilter.style.width = '330px';
+  }
+
+  // start the icon animations
+  skycons.play();
 }
 
 
@@ -367,6 +526,7 @@ loadCalendarData = function () {
   $.ajax({ url: "meals.ics", success: parseMealData, cache: false });
   $.ajax({ url: "family.ics", success: parseCalendarData, cache: false });
   $.ajax({ url: "holidays.ics", success: parseHolidayData, cache: false });
+  $.ajax({ url: "current_weather.json", success: updateCurrentWeather, cache: false });
 
   // get the current date/time
   var thisMoment = moment();
@@ -390,6 +550,7 @@ loadCalendarData = function () {
       agendaItems.push({date: null, summary: "Bible Reading: " + family_reading[i].passage});
     }
   }
+
 };
 
 writeVerseData = function (json) {
@@ -400,3 +561,5 @@ writeVerseData = function (json) {
   votd_html += '</blockquote>';
   $("#dailyVerse").html(votd_html);
 };
+
+
