@@ -1,0 +1,22 @@
+{
+    "results": [
+        {
+            "statement_id": 0,
+            "series": [
+                {
+                    "name": "local_weather",
+                    "columns": [
+                        "time",
+                        "outside_temp"
+                    ],
+                    "values": [
+                        [
+                            "2021-03-14T12:01:15.68214Z",
+                            51.8
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+}

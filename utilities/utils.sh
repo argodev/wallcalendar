@@ -21,3 +21,15 @@ function safe_get_replace_file {
     mv -f ${tmpfile} ${2};
   fi
 }
+
+function safe_replace_file {
+  tmpfile=$1
+  target=$2
+  if [[ -s ${tmpfile} ]];
+  then
+    echo "Download Successful. Deploying File..."
+    chmod +r ${tmpfile}
+    mv -f ${target} ${target}.bak;
+    mv -f ${tmpfile} ${target};
+  fi
+}

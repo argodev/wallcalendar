@@ -1,5 +1,9 @@
 // https://github.com/mifi/ical-expander
 
+// refresh timeout every 5 minutes
+var CURR_WEATHER_TIMEOUT = 300000;
+
+
 class IcalExpander {
   constructor(opts) {
     this.maxIterations = opts.maxIterations != null ? opts.maxIterations : 1000;
@@ -174,9 +178,13 @@ parseHolidayData = function (data) {
   var curr_year = d.getFullYear();
   var curr_month = d.getMonth() + 1; // month returned is 0-based, so we add 1
   var afterString = curr_year.toString() + '-' + curr_month.toString() + '-01';
-  var beforeString = curr_year.toString() + '-' + (curr_month + 1).toString() + '-01';
-  if (curr_month + 1 === 13) {
-    beforeString = (curr_year + 1).toString() + '-01-01';
+
+  // 20210313: UPDATE
+  // changing to be current month + 1, so we get the bleed-over into the following
+  // this is helpful particularly during the last week or so of the month
+  var beforeString = curr_year.toString() + '-' + (curr_month + 2).toString() + '-01';
+  if ((curr_month + 2) % 12 < curr_month) {
+    beforeString = (curr_year + 1).toString() + '-' + (curr_month + 2).toString() + '-01';
   }
 
   // get the events for the current month
@@ -234,9 +242,13 @@ parseCalendarData = function (data) {
   var curr_year = d.getFullYear();
   var curr_month = d.getMonth() + 1; // month returned is 0-based, so we add 1
   var afterString = curr_year.toString() + '-' + curr_month.toString() + '-01';
-  var beforeString = curr_year.toString() + '-' + (curr_month + 1).toString() + '-01';
-  if (curr_month + 1 === 13) {
-    beforeString = (curr_year + 1).toString() + '-01-01';
+
+  // 20210313: UPDATE
+  // changing to be current month + 1, so we get the bleed-over into the following
+  // this is helpful particularly during the last week or so of the month
+  var beforeString = curr_year.toString() + '-' + (curr_month + 2).toString() + '-01';
+  if ((curr_month + 2) % 12 < curr_month) {
+    beforeString = (curr_year + 1).toString() + '-' + (curr_month + 2).toString() + '-01';
   }
 
   // try the new approach
@@ -410,10 +422,11 @@ getWxIcon = function(code) {
       icon = Skycons.PARTLY_CLOUDY_NIGHT;
       break;
     case '04d':
-      icon = Skycons.PARTLY_CLOUDY;
+      icon = Skycons.CLOUDY;
+      console.log("Partly Cloudy");
       break;
     case '04n':
-      icon = Skycons.PARTLY_CLOUDY;
+      icon = Skycons.CLOUDY;
       break;
     case '09d':
       icon = Skycons.SHOWERS_DAY;
@@ -458,14 +471,20 @@ getWxDay = function(ndx) {
   return ndx==0?"Today":days[(today+ndx)%7];
 }
 
+updateLocalWeather = function (data) {
+  console.log("Updating Local Weather...");
+  var local_temp = data.results[0].series[0].values[0][1];
+  $("#fe_temp").text((Math.round(local_temp)).toString() + "\xB0");
+}
+
 updateCurrentWeather = function (data) {
-  //console.log("In updateCurrentWeather");
- 
+  console.log("Updating Current Weather...");
+
   // prepare for the animated icons
   var skycons=new Skycons({"color":"#333"});
 
   // handle the current temperature and conditions
-  $("#fe_temp").text((Math.round(data.current.temp)).toString() + "\xB0");
+  // $("#fe_temp").text((Math.round(data.current.temp)).toString() + "\xB0");
   $("#fe_summary").text(data.current.weather[0].main);
   var wind = Math.round(data.current.wind_speed);
   $("#fe_wind").text("Wind: " + wind.toString() + " mph (" + getWindDir(data.current.wind_deg) + ")");
@@ -485,16 +504,16 @@ updateCurrentWeather = function (data) {
       minFound = l.temp.min;
     }
   }
- 
-  //console.log("Min: " + minFound.toString());
-  //console.log("Max: " + maxFound.toString());
- 
+
+  console.log("Min: " + minFound.toString());
+  console.log("Max: " + maxFound.toString());
+
   var maxRange = 82; // this is dictated by the desired height
   var actualRange = maxFound - minFound;
   var height;
   var top;
-  //console.log(actualRange);
- 
+  console.log(actualRange);
+
   // build out the forecast
   var i = 0;
   for (i = 0; i < 8; i++) {
@@ -505,28 +524,42 @@ updateCurrentWeather = function (data) {
     $("#fe_label" + i.toString()).text(getWxDay(i));
     height=(maxRange*(d.temp.max-d.temp.min)/actualRange).toFixed(4);
     top=(maxRange*(maxFound-d.temp.max)/actualRange).toFixed(4);
-    //console.log(height.toString() + " / " + top.toString());
     $("#fe_temp_bar" + i.toString()).css("height", height.toString() + "px");
     $("#fe_temp_bar" + i.toString()).css("top", top.toString() + "px");
-
-    //height: 55.0914px; top: 7.58656px;
-    //nFilter.style.width = '330px';
   }
 
   // start the icon animations
   skycons.play();
 }
 
+refreshPageContent = function() {
+  console.log("Refreshing page content...");
+  
+  // clear current content...
+  agendaItems = [];
+  myCalEvents = [];
+  if (myCalendar) {
+    myCalendar.removeAllEvents();
+  }
+
+  // load the content the first time
+  $.ajax({ url: "meals.ics", success: parseMealData, cache: false });
+  $.ajax({ url: "family.ics", success: parseCalendarData, cache: false });
+  $.ajax({ url: "holidays.ics", success: parseHolidayData, cache: false });
+  $.ajax({ url: "local_weather.json", success: updateLocalWeather, cache: false });
+  $.ajax({ url: "current_weather.json", success: updateCurrentWeather, cache: false });
+
+  // now let's schedule the next update...
+  setTimeout(refreshPageContent, CURR_WEATHER_TIMEOUT);
+}
+
+
 
 /// This is the main entry point for this little application
 loadCalendarData = function () {
 
   startTime();
-
-  $.ajax({ url: "meals.ics", success: parseMealData, cache: false });
-  $.ajax({ url: "family.ics", success: parseCalendarData, cache: false });
-  $.ajax({ url: "holidays.ics", success: parseHolidayData, cache: false });
-  $.ajax({ url: "current_weather.json", success: updateCurrentWeather, cache: false });
+  refreshPageContent();
 
   // get the current date/time
   var thisMoment = moment();

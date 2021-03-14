@@ -22,7 +22,7 @@ function get_radar_image {
   target="../webapp/radar.png"
 
   # download the file
-  wget https://s.w-x.co/staticmaps/wu/wxtype/county_loc/${1}/animate.png -O ${tmpfile}
+  wget https://s.w-x.co/staticmaps/wu/wxtype/county_loc/${1}/animate.png?t=1 -O ${tmpfile}
 
   # if the file is not empty, move it
   if [[ -s ${tmpfile} ]];
