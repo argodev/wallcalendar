@@ -477,17 +477,25 @@ updateLocalWeather = function (data) {
   $("#fe_temp").text((Math.round(local_temp)).toString() + "\xB0");
 }
 
+// global for skycons
+var skycons = null;
+
 updateCurrentWeather = function (data) {
   console.log("Updating Current Weather...");
 
   // prepare for the animated icons
-  var skycons=new Skycons({"color":"#333"});
+  if (!skycons) {
+    skycons = new Skycons({"color":"#333"});
+  } else {
+    skycons.pause();
+  }
 
   // handle the current temperature and conditions
   // $("#fe_temp").text((Math.round(data.current.temp)).toString() + "\xB0");
   $("#fe_summary").text(data.current.weather[0].main);
   var wind = Math.round(data.current.wind_speed);
   $("#fe_wind").text("Wind: " + wind.toString() + " mph (" + getWindDir(data.current.wind_deg) + ")");
+  skycons.remove("fe_current_icon");
   skycons.add("fe_current_icon", getWxIcon(data.current.weather[0].icon));
 
   // do some prep work to figure out how long each day's temperature
@@ -520,6 +528,7 @@ updateCurrentWeather = function (data) {
     var d = data.daily[i];
     $("#fe_high_temp" + i.toString()).text(Math.round(d.temp.max).toString() + "\xB0");
     $("#fe_low_temp" + i.toString()).text(Math.round(d.temp.min).toString() + "\xB0");
+    skycons.remove("fe_day_icon" + i.toString());
     skycons.add("fe_day_icon" + i.toString(), getWxIcon(d.weather[0].icon));
     $("#fe_label" + i.toString()).text(getWxDay(i));
     height=(maxRange*(d.temp.max-d.temp.min)/actualRange).toFixed(4);
