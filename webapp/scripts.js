@@ -3,6 +3,9 @@
 // refresh timeout every 5 minutes
 var CURR_WEATHER_TIMEOUT = 300000;
 
+// store the last time the full page was reloaded
+var lastReloadDay = new Date().getDay();
+console.log(lastReloadDay);
 
 class IcalExpander {
   constructor(opts) {
@@ -543,6 +546,13 @@ updateCurrentWeather = function (data) {
 
 refreshPageContent = function() {
   console.log("Refreshing page content...");
+
+  var d = new Date().getDay();
+  if (d != lastReloadDay) {
+    // force a full reload of the page
+    console.log("Forced Reload since the day changed");
+    location.reload();
+  }
   
   // clear current content...
   agendaItems = [];
