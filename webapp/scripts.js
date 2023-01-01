@@ -186,8 +186,8 @@ parseHolidayData = function (data) {
   // changing to be current month + 1, so we get the bleed-over into the following
   // this is helpful particularly during the last week or so of the month
   var beforeString = curr_year.toString() + '-' + (curr_month + 2).toString() + '-01';
-  if ((curr_month + 2) % 12 < curr_month) {
-    beforeString = (curr_year + 1).toString() + '-' + (curr_month + 2).toString() + '-01';
+  if ((curr_month+2 != 12) && ((curr_month + 2) % 12 < curr_month)) {
+    beforeString = (curr_year + 1).toString() + '-' + ((curr_month + 2) % 12).toString() + '-01';
   }
 
   // get the events for the current month
@@ -198,7 +198,7 @@ parseHolidayData = function (data) {
   const allEvents = [].concat(mappedEvents, mappedOccurrences);
 
   var count = allEvents.length;
-  //console.log("Found " + String(count) + " holiday(s)");
+  //console.log("Found " + String(count) + " HVA Days(s)");
   if (count > 0) {
     // this is ephemeral... so we'll need to combine it if we get fancy
 
@@ -233,12 +233,90 @@ parseHolidayData = function (data) {
 }
 
 
+parseHVAData = function (data) {
+  console.log("Trying to do the H/V Day Thing...")
+  HVEvents = {
+    events: []
+  };
+
+  // figure out today...
+  var today = '';
+  var d = new Date();
+  var curr_year = d.getFullYear();
+  var curr_month = d.getMonth() + 1; // month returned is 0-based, so we add 1
+  var afterString = curr_year.toString() + '-' + curr_month.toString() + '-01';
+
+  // 20210313: UPDATE
+  // changing to be current month + 1, so we get the bleed-over into the following
+  // this is helpful particularly during the last week or so of the month
+  var beforeString = curr_year.toString() + '-' + (curr_month + 2).toString() + '-01';
+  if ((curr_month+2 != 12) && ((curr_month + 2) % 12 < curr_month)) {
+    beforeString = (curr_year + 1).toString() + '-' + ((curr_month + 2) % 12).toString() + '-01';
+  }
+
+  // get the events for the current month
+  const icalExpander = new IcalExpander({ ics: data, maxIterations: 1000 });
+  const results = icalExpander.between(new Date(afterString), new Date(beforeString));
+  const mappedEvents = results.events.map(e => ({ startDate: e.startDate, endDate: e.endDate, duration: e.duration, summary: e.summary }));
+  const mappedOccurrences = results.occurrences.map(o => ({ startDate: o.startDate, summary: o.item.summary }));
+  const allEvents = [].concat(mappedEvents, mappedOccurrences);
+
+  var count = allEvents.length;
+  console.log("Found " + String(count) + " H/V Days(s)");
+  if (count > 0) {
+    // this is ephemeral... so we'll need to combine it if we get fancy
+
+    var curr_date_string = d.toDateString();
+    var agendaItems = [];
+
+    // loop through each event found
+    allEvents.forEach(function (item) {
+
+      var item_jsdate = item.startDate.toJSDate();
+      var item_endDate = item_jsdate; //item.endDate.toJSDate();
+      if (item.endDate) {
+        item_endDate = item.endDate.toJSDate();
+      }
+      //var allDay = false;
+      //if (item.duration && item.duration.days >= 1) {
+      //  allDay = true;
+     // }
+        //title: item.summary,
+      // HDay 013382
+      // VDay 79b4e0
+      if (item.summary.includes("H Day")){
+        HVEvents.events.push({
+          start: item_jsdate,
+          end: item_endDate,
+          allDay: true,
+          display: 'background',
+          backgroundColor: '#72afdb'
+        });
+      } else {
+        HVEvents.events.push({
+          start: item_jsdate,
+          end: item_endDate,
+          allDay: true,
+          display: 'background',
+          color: '#e6e6e6'
+        });
+      }
+    });
+
+    console.log("Prepared " + String(HVEvents.events.length) + "HV Events");
+    myCalendar.addEventSource(HVEvents);
+    //refreshTodaysAgenda();
+  }
+}
+
+
 // global event list
 var myCalEvents = [];
 var agendaItems = [];
 var todaysReading = 'not_set';
 
 parseCalendarData = function (data) {
+  // console.log('parseCalendarData()');
 
   // var today = '';
   var d = new Date();
@@ -250,18 +328,30 @@ parseCalendarData = function (data) {
   // changing to be current month + 1, so we get the bleed-over into the following
   // this is helpful particularly during the last week or so of the month
   var beforeString = curr_year.toString() + '-' + (curr_month + 2).toString() + '-01';
-  if ((curr_month + 2) % 12 < curr_month) {
-    beforeString = (curr_year + 1).toString() + '-' + (curr_month + 2).toString() + '-01';
+  console.log(beforeString);
+  
+  // 20221002: UPDATE
+  // added logic to ensure curr_month+2 != 12. Otherwise, we ended up with an 
+  // invalid month of 0, which would cause things to be quite unhappy.
+  if ((curr_month+2 != 12) && ((curr_month + 2) % 12 < curr_month)) {
+    beforeString = (curr_year + 1).toString() + '-' + ((curr_month + 2) % 12).toString() + '-01';
   }
+
+  // console.log(afterString);
+  // console.log(beforeString);
+  
 
   // try the new approach
   const icalExpander = new IcalExpander({ ics: data, maxIterations: 1000 });
   const results = icalExpander.between(new Date(afterString), new Date(beforeString));
+//  console.log(results.events.length);
   const mappedEvents = results.events.map(e => ({ startDate: e.startDate, endDate: e.endDate, duration: e.duration, summary: e.summary }));
   const mappedOccurrences = results.occurrences.map(o => ({ startDate: o.startDate, summary: o.item.summary }));
   const allEvents = [].concat(mappedEvents, mappedOccurrences);
 
   var curr_date_string = d.toDateString();
+//  console.log(curr_date_string);
+//  console.log(allEvents.length);
   
   // loop through each event found
   allEvents.forEach(function (item) {
@@ -278,6 +368,10 @@ parseCalendarData = function (data) {
 
     // put the item on the calendar
     // if the item is *before* today...
+    // console.log(item_jsdate);
+    //#4db8ff - blue
+    // #12264b HVA Dark Blue
+    // #72afdb HVA Light Blue
     if (item_jsdate < d) {
       myCalEvents.push({
         title: item.summary,
@@ -294,7 +388,7 @@ parseCalendarData = function (data) {
         start: item_jsdate,
         end: item_endDate,
         allDay: allDay,
-        color: '#4db8ff',
+        color: '#72afdb',
         display: 'block'
       });
     }
@@ -314,7 +408,13 @@ parseCalendarData = function (data) {
   refreshTodaysAgenda();
 };
 
+
+
+
+
+
 parseMealData = function (data) {
+  // console.log("parseMealData()");
   var today = '';
   var d = new Date();
   var curr_year = d.getFullYear();
@@ -426,7 +526,7 @@ getWxIcon = function(code) {
       break;
     case '04d':
       icon = Skycons.CLOUDY;
-      console.log("Partly Cloudy");
+      // console.log("Partly Cloudy");
       break;
     case '04n':
       icon = Skycons.CLOUDY;
@@ -476,8 +576,45 @@ getWxDay = function(ndx) {
 
 updateLocalWeather = function (data) {
   console.log("Updating Local Weather...");
+  //console.log(data);
   var local_temp = data.results[0].series[0].values[0][1];
+  var temp_ts = new Date(data.results[0].series[0].values[0][0]);
   $("#fe_temp").text((Math.round(local_temp)).toString() + "\xB0");
+
+
+  // check the "staleness" of the temp. If it is too old (> 2 hours), 
+  var stale = false;
+  var temp_Time = temp_ts.getTime();
+  var compare = new Date(temp_Time + 2 * 60 * 60 * 1000);
+  var current = new Date();
+  if (compare < current) {
+    console.log('timestamp on local temp is too old. Marking stale')
+    stale = true;
+  }
+  // hide the current and show the airport value
+  if (stale) {
+    $("#fe_temp").hide();
+    $("#fe_temp2").show();
+  } else {
+    $("#fe_temp").show();
+    $("#fe_temp2").hide();
+  }
+}
+
+updateImages = function (data) {
+  console.log("Updating images...");
+  $('.carousel-inner').empty();
+  var first=true;
+  
+  data.images.forEach((image) => {
+    if (first) {
+      $('.carousel-inner').append('<div class="carousel-item active"> <img class="d-block w-100" src="' + image + '" alt=""> </div>');      
+      first = false;
+    } else {
+      $('.carousel-inner').append('<div class="carousel-item"> <img class="d-block w-100" src="' + image + '" alt=""> </div>');
+    }
+  });
+
 }
 
 // global for skycons
@@ -494,7 +631,7 @@ updateCurrentWeather = function (data) {
   }
 
   // handle the current temperature and conditions
-  // $("#fe_temp").text((Math.round(data.current.temp)).toString() + "\xB0");
+  $("#fe_temp2").text((Math.round(data.current.temp)).toString() + "\xB0");
   $("#fe_summary").text(data.current.weather[0].main);
   var wind = Math.round(data.current.wind_speed);
   $("#fe_wind").text("Wind: " + wind.toString() + " mph (" + getWindDir(data.current.wind_deg) + ")");
@@ -545,7 +682,7 @@ updateCurrentWeather = function (data) {
 }
 
 refreshPageContent = function() {
-  console.log("Refreshing page content...");
+  console.log("refreshPageContent()");
 
   var d = new Date().getDay();
   if (d != lastReloadDay) {
@@ -553,6 +690,8 @@ refreshPageContent = function() {
     console.log("Forced Reload since the day changed");
     location.reload();
   }
+
+	//console.log(d);
   
   // clear current content...
   agendaItems = [];
@@ -565,8 +704,10 @@ refreshPageContent = function() {
   $.ajax({ url: "meals.ics", success: parseMealData, cache: false });
   $.ajax({ url: "family.ics", success: parseCalendarData, cache: false });
   $.ajax({ url: "holidays.ics", success: parseHolidayData, cache: false });
+  $.ajax({ url: "hva.ics", success: parseHVAData, cache: false });
   $.ajax({ url: "local_weather.json", success: updateLocalWeather, cache: false });
   $.ajax({ url: "current_weather.json", success: updateCurrentWeather, cache: false });
+  $.ajax({ url: "imagedata.json", success: updateImages, cache: false });
 
   // now let's schedule the next update...
   setTimeout(refreshPageContent, CURR_WEATHER_TIMEOUT);
@@ -576,6 +717,7 @@ refreshPageContent = function() {
 
 /// This is the main entry point for this little application
 loadCalendarData = function () {
+  console.log("locaCalendarData()");
 
   startTime();
   refreshPageContent();

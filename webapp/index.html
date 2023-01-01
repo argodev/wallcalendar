@@ -7,7 +7,6 @@
   <title>Family Calendar</title>
   <meta name="description" content="Our home calendar">
   <meta name="author" content="Rob Gillen">
-  <!-- meta http-equiv="refresh" content="600" -->
   <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -64,6 +63,7 @@
               <div class="fe_currently">
                 <canvas id="fe_current_icon" class="fe_current_icon" width="160" height="160" style="width:80px; height:80px"></canvas>
                 <div id="fe_temp" class="fe_temp"></div>
+                <div id="fe_temp2" class="fe_temp fe_temp2"></div>
                 <div id="fe_summary" class="fe_summary"></div>
                 <div id="fe_wind" class="fe_wind"></div>
               </div>
@@ -144,106 +144,18 @@
         </div>
         <div class="card border-0" style="margin: auto; text-align: center; width: 30vw;">
           <img src="radar.png?t=1" onload="imageRefresh(this, 300000)">
-        <div>
-        <!--
-        <div id="myPhotos" class="carousel slide lazy" data-ride="carousel" data-interval="10000">
+        </div>
+        <br />
+        <div class="card border-0" style="margin: auto; text-align: center; width: 30vw;">
+          <div id="myPhotos" class="carousel slide lazy" data-ride="carousel" data-interval="10000">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
               <img class="d-block w-100" src="/images/ec0101.jpg" alt="First slide">
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0102.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0103.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0104.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0105.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0106.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0107.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0201.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0202.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0203.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0204.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0205.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0206.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0207.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0208.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0209.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0210.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0211.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0212.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0213.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0214.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0215.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0216.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0301.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0302.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0303.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0304.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0305.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0306.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0307.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" data-src="/images/ec0308.jpg" alt="Third slide">
-            </div>
+
           </div>
-        -->
         </div>
+      </div>
       </div>
     </div>
   </div>

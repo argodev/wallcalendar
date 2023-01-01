@@ -1,8 +1,11 @@
 webapp/meals.ics
 webapp/family.ics
 webapp/holidays.ics
+webapp/hva.ics
 webapp/images/
 webapp/*.bak
 webapp/radar.png
 webapp/current_weather.json
 webapp/local_weather.json
+*.bak
+webapp/oldcalenders/
