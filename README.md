@@ -26,17 +26,22 @@ works, you may choose to schedule it to run periodically via `crontab`. In my
 setup, it runs every hour.
 
 ```bash
-# run crontab as root
-$ sudo crontab -e
+# run crontab
+$ crontab -e
 
 # select prefer editor if prompted
-
 # edit the file to have a line that looks something like the following:
 
-# m h  dom mon dow   command                                                                                                                                         
-0 * * * * /home/pi/get_calendars.sh
+# m h  dom mon dow   command                                              
+0 * * * * cd /home/your_username/wallcalendar/utilities && ./get_calendars.sh > /dev/null 2>&1
+*/10 * * * * cd /home/your_username/wallcalendar/utilities && ./get_radar.sh > /dev/null 2>&1
+*/10 * * * * cd /home/your_username/wallcalendar/utilities && ./update_weather.sh > /dev/null 2>&1
 ```
 
+in `/etc/nginx/sites-enabled/default`
+change this line appropiately:
+
+`root /home/your_username/wallcalendar/webapp;`
 
 
 ## Preview
