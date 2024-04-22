@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AerisWeather WeatherBlox</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="stylesheet" href="https://cdn.aerisapi.com/wxblox/latest/aeris-wxblox.css">
+    <script defer src="https://cdn.aerisapi.com/wxblox/latest/aeris-wxblox.js"></script>
+
+</head>
+<body>
+
+    <!--// target DOM element where WeatherBlox will be rendered //-->
+    <div id="wxblox" class="aeris-wrapper"></div>
+
+    <script>
+    window.onload = () => {
+        // set Aeris account access keys
+        const aeris = new AerisWeather('v5R0DKw56RY02PlFjEavi', 'HzidtkyEVRgfwT7W2aJUsZbCFjalF8YdPRTcwhtL');
+
+        aeris.on('ready', () => {
+
+            // create desired WeatherBlox instance
+            const view = new aeris.wxblox.views.MapViewer('#wxblox', {
+                map: {
+                    center: "Knoxville, TN",
+                    layers: {
+                        base: "flat",
+                        data: "radar",
+                        overlays: "admin"
+                    },
+                    zoom: 7,
+                    size: {
+                        factor: 0.75,
+                        autoscale: false,
+                        width: 768,
+                        height: 496
+                    }
+                },
+                animation: {
+                    enabled: true,
+                    autoplay: true,
+                    alwaysShowPast: false,
+                    alwaysShowFuture: false,
+                    from: -7200,
+                    to: 0,
+                    duration: 2,
+                    endDelay: 1,
+                    intervals: 10
+                },
+                overlays: {
+                    timestamp: "MM/dd/yyyy hh:mm a"
+                }
+            });
+
+            // load data and render the view for a specific location
+            view.load();
+            
+        });
+    };
+    </script>
+
+</body>
+</html>

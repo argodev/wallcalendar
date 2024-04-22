@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AerisWeather Map</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <script defer src="https://cdn.aerisapi.com/sdk/js/latest/aerisweather.min.js"></script>
+
+</head>
+<body>	
+
+    <div id="map"></div>
+
+    <script>		 
+        window.onload = () => { 
+            const target = document.getElementById('map');
+            const aeris = new AerisWeather('v5R0DKw56RY02PlFjEavi', 'HzidtkyEVRgfwT7W2aJUsZbCFjalF8YdPRTcwhtL');	
+            const request = aeris.map().layers('flat-dk,radar,admin-dk');
+            request.center('knoxville, tn').zoom(8);
+            request.size(768, 496);
+                
+            request.get().then((result) => {
+                const { image } = result;
+                if (image) {
+                    target.innerHTML = `<img src="${image.src}">`;
+                }
+            }); 
+        };				
+    </script>
+
+</body>
+</html>

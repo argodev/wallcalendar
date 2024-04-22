@@ -599,6 +599,8 @@ updateLocalWeather = function (data) {
     $("#fe_temp").show();
     $("#fe_temp2").hide();
   }
+
+  getAerisWeatherImage();
 }
 
 updateImages = function (data) {
@@ -744,8 +746,25 @@ loadCalendarData = function () {
       agendaItems.push({date: null, summary: "Bible Reading: " + family_reading[i].passage});
     }
   }
-
 };
+
+
+getAerisWeatherImage = function () {
+  // weather map stuff??? 230830
+  const target = document.getElementById('wxblox');
+  const aeris = new AerisWeather('v5R0DKw56RY02PlFjEavi', 'HzidtkyEVRgfwT7W2aJUsZbCFjalF8YdPRTcwhtL');	
+  const request = aeris.map().layers('flat-dk,radar,admin-dk');
+  request.center('knoxville, tn').zoom(8);
+  request.size(768, 496);
+
+  request.get().then((result) => {
+      const { image } = result;
+      if (image) {
+          target.innerHTML = `<img src="${image.src}">`;
+      }
+  });   
+}
+
 
 writeVerseData = function (json) {
   var votd = json.votd;

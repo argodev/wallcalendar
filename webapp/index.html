@@ -13,6 +13,8 @@
         crossorigin="anonymous">
   <link href='fullcalendar/main.css' rel='stylesheet' />
   <link rel="stylesheet" href="styles.css?v1.0">
+  <link rel="stylesheet" href="https://cdn.aerisapi.com/wxblox/latest/aeris-wxblox.css">
+  
 </head>
 <body onload="loadCalendarData()">
   <script>
@@ -46,12 +48,10 @@
           <div class="card-header">Today's Agenda</div>
           <div class="card-body" id="dailyAgenda"></div>
         </div>
-        <!--
         <div class="card mb-3">
           <div class="card-header">Memory Verse</div>
           <div class="card-body" id="memoryVerse"></div>
         </div> 
-        -->
         <!-- <div class="card border-0" style="margin: auto; text-align: center; width: 30vw; height: 245px;">
           <iframe style="align:left" id="forecast_embed" type="text/html" frameborder="0" 
                   style="width: 30vw;" height="245px" 
@@ -142,9 +142,11 @@
             </div>
           </div>
         </div>
-        <div class="card border-0" style="margin: auto; text-align: center; width: 30vw;">
-          <img src="radar.png?t=1" onload="imageRefresh(this, 300000)">
+        <div id="wxblox" class="card border-0" style="margin: auto; text-align: center; width: 30vw;">
+          
+          <!-- <img src="radar.png?t=1" onload="imageRefresh(this, 300000)"> -->
         </div>
+        <!--
         <br />
         <div class="card border-0" style="margin: auto; text-align: center; width: 30vw;">
           <div id="myPhotos" class="carousel slide lazy" data-ride="carousel" data-interval="10000">
@@ -155,6 +157,7 @@
 
           </div>
         </div>
+      -->
       </div>
       </div>
     </div>
@@ -169,6 +172,7 @@
   <script src='fullcalendar/main.js'></script>
   <script src="moment.min.js"></script>
   <script src="memory.js"></script>
+  <script src="https://cdn.aerisapi.com/sdk/js/latest/aerisweather.min.js"></script>
 
   <script>
         myCalendar = null;

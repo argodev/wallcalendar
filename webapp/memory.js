@@ -1,343 +1,258 @@
 family_verses = [{
-    "startDate": "2019-09-08",
-    "endDate": "2019-09-14",
-    "reference": "Psalm 119:11",
-    "text": "I have treasured your word in my heart so that I may not sin against you." 
+    "startDate": "2024-01-15",
+    "endDate": "2024-01-22",
+    "reference": "Isaiah 43:1-3",
+    "text": "Do not fear, for I have redeemed you; I have called you by your name; you are mine. When you pass through the waters, I will be with you and the rivers will not overwhelm you, When you walk through the fire, you will not be scorched and the flame will not burn you. For I am the LORD your God, the Holy One of Israel, and your Savior." 
 }, {
-    "startDate": "2019-09-15",
-    "endDate": "2019-09-21",
-    "reference": "John 3:16-17",
-    "text": "For God loved the world in this way: He gave his one and only Son, so that everyone who believes in him will not perish but have eternal life. For God did not send his Son into the world to condemn the world, but to save the world through him." 
+    "startDate": "2024-01-22",
+    "endDate": "2024-01-29",
+    "reference": "John 14:6",
+    "text": "Jesus told him, I am the way, the truth, and the life. No one comes to the Father except through me." 
 }, {
-    "startDate": "2019-09-22",
-    "endDate": "2019-09-28",
-    "reference": "Romans 3:23",
-    "text": "For all have sinned and fall short of the glory of God." 
+    "startDate": "2024-01-29",
+    "endDate": "2024-02-05",
+    "reference": "1 Thessalonians 5:14-17",
+    "text": "And we exhort you, brothers and sisters: warn those who are idle, comfort the discouraged, help the weak, be patient with everyone. See to it that no one repays evil for evil to anyone, but always pursue what is good for one another and for all. Rejoice always, pray constantly," 
 }, {
-    "startDate": "2019-09-29",
-    "endDate": "2019-10-06",
+    "startDate": "2024-02-05",
+    "endDate": "2024-02-12",
+    "reference": "1 Thessalonians 5:18-22",
+    "text": "give thanks in everything; for this is God's will for you in Christ Jesus. Don't stifle the Spirit. Don't despise prophecies, but test all things. Hold on to what is good. Stay away from every kind of evil." 
+}, {
+    "startDate": "2024-02-12",
+    "endDate": "2024-02-19",
+    "reference": "Proverbs 3:9-10",
+    "text": "Honor the LORD with your possessions and with the first produce of your entire harvest; then your barns will be completely filled, and your vats will overflow with new wine." 
+}, {
+    "startDate": "2024-02-19",
+    "endDate": "2024-02-29",
+    "reference": "Proverbs 3:11-12",
+    "text": "Do not despise the LORD's instruction, my son, and do not loathe his discipline; for the LORD disciplines the one he loves, just as a father disciplines the son in whom he delights." 
+}, {
+    "startDate": "2024-02-29",
+    "endDate": "2024-03-04",
+    "reference": "John 10:27-30",
+    "text": "My sheep hear my voice, I know them, and they follow me. I give them eternal life, and they will never perish. No one will snatch them out of my hand. My Father, who has given them to me, is greater than all. No one is able to snatch them out of the Father's hand. I and the Father are one.”" 
+}, {
+    "startDate": "2024-03-04",
+    "endDate": "2024-03-11",
+    "reference": "Acts 5:29",
+    "text": "Peter and the apostles replied, 'We must obey God rather than people.'" 
+}, {
+    "startDate": "2024-03-11",
+    "endDate": "2024-03-18",
+    "reference": "Psalm 100:1-3",
+    "text": "Let the whole earth shout triumphantly to the LORD! Serve the LORD with gladness; come before him with joyful songs. Acknowledge that the LORD is God. He made us, and we are his— his people, the sheep of his pasture." 
+}, {
+    "startDate": "2024-03-18",
+    "endDate": "2024-03-25",
+    "reference": "Psalm 100:4-5",
+    "text": "Enter his gates with thanksgiving and his courts with praise. Give thanks to him and bless his name. For the LORD is good, and his faithful love endures forever; his faithfulness, through all generations." 
+}, {
+    "startDate": "2024-03-25",
+    "endDate": "2024-04-01",
+    "reference": "Ephesians 2:1-3",
+    "text": "And you were dead in your trespasses and sins in which you previously walked according to the ways of this world, according to the ruler of the power of the air, the spirit now working in the disobedient. We too all previously lived among them in our fleshly desires, carrying out the inclinations of our flesh and thoughts, and we were by nature children under wrath as the others were also." 
+}, {
+    "startDate": "2024-04-01",
+    "endDate": "2024-04-08",
+    "reference": "Ephesians 2:4-5",
+    "text": "But God, who is rich in mercy, because of his great love that he had for us, made us alive with Christ even though we were dead in trespasses. You are saved by grace!" 
+}, {
+    "startDate": "2024-04-08",
+    "endDate": "2024-04-15",
+    "reference": "Ephesians 2:6-7",
+    "text": "He also raised us up with him and seated us with him in the heavens in Christ Jesus, so that in the coming ages he might display the immeasurable riches of his grace through his kindness to us in Christ Jesus." 
+}, {
+    "startDate": "2024-04-15",
+    "endDate": "2024-04-22",
+    "reference": "Ephesians 2:8-10",
+    "text": "For you are saved by grace through faith, and this is not from yourselves; it is God's gift—not from works, so that no one can boast. For we are his workmanship, created in Christ Jesus for good works, which God prepared ahead of time for us to do." 
+}, {
+    "startDate": "2024-04-22",
+    "endDate": "2024-04-29",
+    "reference": "Romans 5:8",
+    "text": "But God proves his own love for us in that while we were still sinners, Christ died for us." 
+}, {
+    "startDate": "2024-04-29",
+    "endDate": "2024-05-06",
+    "reference": "Romans 5:9-10",
+    "text": "How much more then, since we have now been justified by his blood, will we be saved through him from wrath. For if, while we were enemies, we were reconciled to God through the death of his Son, then how much more, having been reconciled, will we be saved by his life." 
+}, {
+    "startDate": "2024-05-06",
+    "endDate": "2024-05-13",
+    "reference": "Psalm 139:1-3",
+    "text": "LORD, you have searched me and known me. You know when I sit down and when I stand up; you understand my thoughts from far away. You observe my travels and my rest; you are aware of all my ways." 
+}, {
+    "startDate": "2024-05-13",
+    "endDate": "2024-05-20",
+    "reference": "Psalm 139:4-5",
+    "text": "Before a word is on my tongue, you know all about it, LORD. You have encircled me; you have placed your hand on me." 
+}, {
+    "startDate": "2024-05-20",
+    "endDate": "2024-05-27",
+    "reference": "Psalm 139:6-8",
+    "text": "This wondrous knowledge is beyond me. It is lofty; I am unable to reach it. Where can I go to escape your Spirit? Where can I flee from your presence? If I go up to heaven, you are there; if I make my bed in Sheol, you are there." 
+}, {
+    "startDate": "2024-05-27",
+    "endDate": "2024-06-03",
+    "reference": "Psalm 139:9-10",
+    "text": "If I live at the eastern horizon or settle at the western limits, even there your hand will lead me; your right hand will hold on to me." 
+}, {
+    "startDate": "2024-06-03",
+    "endDate": "2024-06-10",
+    "reference": "Psalm 139:11-12",
+    "text": "If I say, “Surely the darkness will hide me, and the light around me will be night”— even the darkness is not dark to you. The night shines like the day; darkness and light are alike to you." 
+}, {
+    "startDate": "2024-06-10",
+    "endDate": "2024-06-17",
+    "reference": "Psalm 139:13-14",
+    "text": "For it was you who created my inward parts; you knit me together in my mother's womb. I will praise you because I have been remarkably and wondrously made. Your works are wondrous, and I know this very well." 
+}, {
+    "startDate": "2024-06-17",
+    "endDate": "2024-06-24",
+    "reference": "Psalm 139:15-16",
+    "text": "My bones were not hidden from you when I was made in secret, when I was formed in the depths of the earth. Your eyes saw me when I was formless; all my days were written in your book and planned before a single one of them began." 
+}, {
+    "startDate": "2024-06-24",
+    "endDate": "2024-07-01",
+    "reference": "Psalm 139:17-18",
+    "text": "God, how precious your thoughts are to me; how vast their sum is! If I counted them, they would outnumber the grains of sand; when I wake up, I am still with you." 
+}, {
+    "startDate": "2024-07-01",
+    "endDate": "2024-07-08",
+    "reference": "Psalm 139:23-24",
+    "text": "Search me, God, and know my heart; test me and know my concerns. See if there is any offensive way in me; lead me in the everlasting way." 
+}, {
+    "startDate": "2024-07-08",
+    "endDate": "2024-07-15",
+    "reference": "Proverbs 17:9,22",
+    "text": "Whoever conceals an offense promotes love, but whoever gossips about it separates friends. A joyful heart is good medicine, but a broken spirit dries up the bones." 
+}, {
+    "startDate": "2024-07-15",
+    "endDate": "2024-07-22",
+    "reference": "Hebrews 1:1-2",
+    "text": "Long ago God spoke to our ancestors by the prophets at different times and in different ways. In these last days, he has spoken to us by his Son. God has appointed him heir of all things and made the universe through him." 
+}, {
+    "startDate": "2024-07-22",
+    "endDate": "2024-07-29",
+    "reference": "Hebrews 1:3-4",
+    "text": "The Son is the radiance of God's glory and the exact expression of his nature, sustaining all things by his powerful word. After making purification for sins, he sat down at the right hand of the Majesty on high. So he became superior to the angels, just as the name he inherited is more excellent than theirs." 
+}, {
+    "startDate": "2024-07-29",
+    "endDate": "2024-08-05",
+    "reference": "Jeremiah 1:12",
+    "text": "The LORD said to me, “You have seen correctly, for I watch over my word to accomplish it.”" 
+}, {
+    "startDate": "2024-08-05",
+    "endDate": "2024-08-12",
+    "reference": "Psalm 9:9-10",
+    "text": "The LORD is a refuge for the persecuted, a refuge in times of trouble. Those who know your name trust in you because you have not abandoned those who seek you, LORD." 
+}, {
+    "startDate": "2024-08-12",
+    "endDate": "2024-08-19",
+    "reference": "James 1:17",
+    "text": "Every good and perfect gift is from above, coming down from the Father of lights, who does not change like shifting shadows." 
+}, {
+    "startDate": "2024-08-19",
+    "endDate": "2024-08-26",
+    "reference": "Psalm 27:1-3",
+    "text": "The LORD is my light and my salvation— whom should I fear? The LORD is the stronghold of my life— whom should I dread? When evildoers came against me to devour my flesh, my foes and my enemies stumbled and fell. Though an army deploys against me, my heart will not be afraid; though a war breaks out against me, I will still be confident." 
+}, {
+    "startDate": "2024-08-26",
+    "endDate": "2024-09-02",
+    "reference": "Psalm 27:4-5",
+    "text": "I have asked one thing from the LORD; it is what I desire: to dwell in the house of the LORD all the days of my life, gazing on the beauty of the LORD and seeking him in his temple. For he will conceal me in his shelter in the day of adversity; he will hide me under the cover of his tent; he will set me high on a rock." 
+}, {
+    "startDate": "2024-09-02",
+    "endDate": "2024-09-09",
+    "reference": "Psalm 27:13-14",
+    "text": "I am certain that I will see the LORD's goodness in the land of the living. Wait for the LORD; be strong, and let your heart be courageous. Wait for the LORD." 
+}, {
+    "startDate": "2024-09-09",
+    "endDate": "2024-09-16",
+    "reference": "James 1:22-24",
+    "text": "But be doers of the word and not hearers only, deceiving yourselves. Because if anyone is a hearer of the word and not a doer, he is like someone looking at his own face in a mirror. For he looks at himself, goes away, and immediately forgets what kind of person he was." 
+}, {
+    "startDate": "2024-09-16",
+    "endDate": "2024-09-23",
+    "reference": "Revelation 2:10",
+    "text": "Don't be afraid of what you are about to suffer. Look, the devil is about to throw some of you into prison to test you, and you will experience affliction for ten days. Be faithful to the point of death, and I will give you the crown of life." 
+}, {
+    "startDate": "2024-09-23",
+    "endDate": "2024-09-30",
+    "reference": "Proverbs 26:20",
+    "text": "Without wood, fire goes out; without a gossip, conflict dies down." 
+}, {
+    "startDate": "2024-09-30",
+    "endDate": "2024-10-07",
+    "reference": "Jeremiah 9:23-24",
+    "text": "This is what the LORD says: The wise person should not boast in his wisdom; the strong should not boast in his strength; the wealthy should not boast in his wealth. But the one who boasts should boast in this: that he understands and knows me— that I am the LORD, showing faithful love, justice, and righteousness on the earth, for I delight in these things. This is the LORD's declaration." 
+}, {
+    "startDate": "2024-10-07",
+    "endDate": "2024-10-14",
     "reference": "Romans 6:23",
     "text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord." 
 }, {
-    "startDate": "2019-10-06",
-    "endDate": "2019-10-13",
-    "reference": "Revelation 3:20",
-    "text": "See! I stand at the door and knock. If anyone hears my voice and opens the door, I will come in to him and eat with him, and he with me." 
+    "startDate": "2024-10-14",
+    "endDate": "2024-10-21",
+    "reference": "1 Corinthians 15:1-3",
+    "text": "Now I want to make clear for you, brothers and sisters, the gospel I preached to you, which you received, on which you have taken your stand and by which you are being saved, if you hold to the message I preached to you—unless you believed in vain. For I passed on to you as most important what I also received: that Christ died for our sins according to the Scriptures" 
 }, {
-    "startDate": "2019-10-13",
-    "endDate": "2019-10-20",
-    "reference": "John 14:6",
-    "text": "Jesus told him, “I am the way, the truth, and the life. No one comes to the Father except through me." 
+    "startDate": "2024-10-21",
+    "endDate": "2024-10-28",
+    "reference": "1 Peter 3:18",
+    "text": "For Christ also suffered for sins once for all, the righteous for the unrighteous, that he might bring you to God. He was put to death in the flesh but made alive by the Spirit," 
 }, {
-    "startDate": "2019-10-20",
-    "endDate": "2019-10-27",
-    "reference": "Ephesians 2:8-9",
-    "text": "For you are saved by grace through faith, and this is not from yourselves; it is God’s gift— not from works, so that no one can boast." 
+    "startDate": "2024-10-28",
+    "endDate": "2024-11-04",
+    "reference": "Psalm 55:22",
+    "text": "Cast your burden on the LORD, and he will sustain you; he will never allow the righteous to be shaken." 
 }, {
-    "startDate": "2019-10-27",
-    "endDate": "2019-11-03",
-    "reference": "2 Corinthians 5:17",
-    "text": "Therefore, if anyone is in Christ, he is a new creation; the old has passed away, and see, the new has come!" 
+    "startDate": "2024-11-04",
+    "endDate": "2024-11-11",
+    "reference": "Psalm 127:1", 
+    "text": "Unless the LORD builds a house, its builders labor over it in vain; unless the LORD watches over a city, the watchman stays alert in vain."
 }, {
-    "startDate": "2019-11-03",
-    "endDate": "2019-11-10",
-    "reference": "Isaiah 40:28",
-    "text": "Do you not know? Have you not heard? The LORD is the everlasting God, the Creator of the whole earth. He never becomes faint or weary; there is no limit to his understanding."
+    "startDate": "2024-11-11",
+    "endDate": "2024-11-18",
+    "reference": "James 4:7-8",
+    "text": "Therefore, submit to God. Resist the devil, and he will flee from you. Draw near to God, and he will draw near to you. Cleanse your hands, sinners, and purify your hearts, you double-minded." 
 }, {
-    "startDate": "2019-11-10",
-    "endDate": "2019-11-17",
-    "reference": "Isaiah 40:30-31",
-    "text": "Youths may become faint and weary, and young men stumble and fall, but those who trust in the LORD will renew their strength; they will soar on wings like eagles; they will run and not become weary, they will walk and not faint."
+    "startDate": "2024-11-18",
+    "endDate": "2024-11-25",
+    "reference": "Psalm 119:14-16",
+    "text": "I rejoice in the way revealed by your decrees as much as in all riches. I will meditate on your precepts and think about your ways. I will delight in your statutes; I will not forget your word." 
 }, {
-    "startDate": "2019-11-17",
-    "endDate": "2019-11-24",
-    "reference": "Jeremiah 29:11",
-    "text": "For I know the plans I have for you”—this is the LORD’s declaration—“plans for your well-being, not for disaster, to give you a future and a hope."
+    "startDate": "2024-11-25",
+    "endDate": "2024-12-02",
+    "reference": "John 15:7",
+    "text": "If you remain in me and my words remain in you, ask whatever you want and it will be done for you." 
 }, {
-    "startDate": "2019-11-24",
-    "endDate": "2019-12-01",
-    "reference": "Romans 8:28",
-    "text": "We know that all things work together for the good of those who love God, who are called according to his purpose."
+    "startDate": "2024-12-02",
+    "endDate": "2024-12-09",
+    "reference": "Psalm 118:13-14",
+    "text": "They pushed me hard to make me fall, but the LORD helped me. The LORD is my strength and my song; he has become my salvation." 
 }, {
-    "startDate": "2019-12-01",
-    "endDate": "2019-12-08",
-    "reference": "Philippians 4:19",
-    "text": "And my God will supply all your needs according to his riches in glory in Christ Jesus."
+    "startDate": "2024-12-09",
+    "endDate": "2024-12-16",
+    "reference": "Proverbs 16:32",
+    "text": "Patience is better than power, and controlling one's emotions, than capturing a city." 
 }, {
-    "startDate": "2019-12-08",
-    "endDate": "2019-12-15",
-    "reference": "Romans 8:38-39",
-    "text": "For I am persuaded that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor any other created thing will be able to separate us from the love of God that is in Christ Jesus our Lord."
+    "startDate": "2024-12-16",
+    "endDate": "2024-12-23",
+    "reference": "Hebrews 3:12-13",
+    "text": "Watch out, brothers and sisters, so that there won't be in any of you an evil, unbelieving heart that turns away from the living God. But encourage each other daily, while it is still called today, so that none of you is hardened by sin's deception." 
 }, {
-    "startDate": "2019-12-15",
-    "endDate": "2019-12-22",
-    "reference": "Matthew 11:28-30",
-    "text": "Come to me, all of you who are weary and burdened, and I will give you rest. Take up my yoke and learn from me, because I am lowly and humble in heart, and you will find rest for your souls. For my yoke is easy and my burden is light."
+    "startDate": "2024-12-23",
+    "endDate": "2024-12-30",
+    "reference": "1 Corinthians 15:58",
+    "text": "Therefore, my dear brothers and sisters, be steadfast, immovable, always excelling in the Lord's work, because you know that your labor in the Lord is not in vain." 
 }, {
-    "startDate": "2019-12-22",
-    "endDate": "2019-12-29",
-    "reference": "Psalm 27:1",
-    "text": "The LORD is my light and my salvation— whom should I fear? The LORD is the stronghold of my life— whom should I dread?"
-}, {
-    "startDate": "2019-12-29",
-    "endDate": "2020-01-05",
-    "reference": "Joshua 1:9",
-    "text": "Haven’t I commanded you: be strong and courageous? Do not be afraid or discouraged, for the LORD your God is with you wherever you go."
-}, {
-    "startDate": "2020-01-05",
-    "endDate": "2020-01-12",
-    "reference": "Psalm 46:1",
-    "text": "God is our refuge and strength, a helper who is always found in times of trouble."
-}, {
-    "startDate": "2020-01-12",
-    "endDate": "2020-01-19",
-    "reference": "Hebrews 13:8",
-    "text": "Jesus Christ is the same yesterday, today, and forever."
-}, {
-    "startDate": "2020-01-19",
-    "endDate": "2020-01-26",
-    "reference": "Matthew 11:28",
-    "text": "Come to me, all of you who are weary and burdened, and I will give you rest."
-}, {
-    "startDate": "2020-01-26",
-    "endDate": "2020-02-02",
-    "reference": "2 Timothy 3:16",
-    "text": "All Scripture is inspired by God and is profitable for teaching, for rebuking, for correcting, for training in righteousness,"
-}, {
-    "startDate": "2020-02-02",
-    "endDate": "2020-02-09",
-    "reference": "Psalm 119:105",
-    "text": "Your word is a lamp for my feet and a light on my path."
-}, {
-    "startDate": "2020-02-09",
-    "endDate": "2020-02-16",
-    "reference": "Psalm 119:11",
-    "text": "I have treasured your word in my heart so that I may not sin against you."
-}, {
-    "startDate": "2020-02-16",
-    "endDate": "2020-02-23",
-    "reference": "Joshua 1:8",
-    "text": "This book of instruction must not depart from your mouth; you are to meditate on it day and night so that you may carefully observe everything written in it. For then you will prosper and succeed in whatever you do."
-}, {
-    "startDate": "2020-02-23",
-    "endDate": "2020-03-01",
-    "reference": "Luke 1:37",
-    "text": "For nothing will be impossible with God.”"
-}, {
-    "startDate": "2020-03-01",
-    "endDate": "2020-03-08",
-    "reference": "Philippians 4:13",
-    "text": "I am able to do all things through him who strengthens me."
-}, {
-    "startDate": "2020-03-08",
-    "endDate": "2020-03-15",
-    "reference": "Proverbs 3:5-6",
-    "text": "Trust in the LORD with all your heart, and do not rely on your own understanding; in all your ways know him, and he will make your paths straight."
-}, {
-    "startDate": "2020-03-15",
-    "endDate": "2020-03-22",
-    "reference": "Psalm 46:10",
-    "text": "Stop your fighting, and know that I am God, exalted among the nations, exalted on the earth."
-}, {
-    "startDate": "2020-03-22",
-    "endDate": "2020-03-29",
-    "reference": "1 Peter 1:6",
-    "text": "You rejoice in this, even though now for a short time, if necessary, you suffer grief in various trials"
-}, {
-    "startDate": "2020-03-29",
-    "endDate": "2020-04-05",
-    "reference": "James 1:17",
-    "text": "Every good and perfect gift is from above, coming down from the Father of lights, who does not change like shifting shadows."
-}, {
-    "startDate": "2020-04-05",
-    "endDate": "2020-04-12",
-    "reference": "Joshua 24:15b",
-    "text": "As for me and my family, we will worship the LORD."
-}, {
-    "startDate": "2020-04-12",
-    "endDate": "2020-04-19",
-    "reference": "1 Corinthians 10:23",
-    "text": "Everything is permissible,” but not everything is beneficial. “Everything is permissible,” but not everything builds up."
-}, {
-    "startDate": "2020-04-19",
-    "endDate": "2020-04-26",
-    "reference": "Matthew 22:37-39",
-    "text": "He said to him, “Love the Lord your God with all your heart, with all your soul, and with all your mind. This is the greatest and most important command. The second is like it: Love your neighbor as yourself."
-}, {
-    "startDate": "2020-04-26",
-    "endDate": "2020-05-03",
-    "reference": "1 Corinthians 13:4-7",
-    "text": "Love is patient, love is kind. Love does not envy, is not boastful, is not arrogant, is not rude, is not self-seeking, is not irritable, and does not keep a record of wrongs. Love finds no joy in unrighteousness but rejoices in the truth. It bears all things, believes all things, hopes all things, endures all things."
-}, {
-    "startDate": "2020-05-03",
-    "endDate": "2020-05-10",
-    "reference": "Matthew 25:40",
-    "text": "And the King will answer them, ‘Truly I tell you, whatever you did for one of the least of these brothers and sisters of mine, you did for me.’"
-}, {
-    "startDate": "2020-05-10",
-    "endDate": "2020-05-17",
-    "reference": "1 Corinthians 16:14",
-    "text": "Do everything in love."
-}, {
-    "startDate": "2020-05-17",
-    "endDate": "2020-05-24",
-    "reference": "Matthew 5:16",
-    "text": "In the same way, let your light shine before others, so that they may see your good works and give glory to your Father in heaven."
-}, {
-    "startDate": "2020-05-24",
-    "endDate": "2020-05-31",
-    "reference": "Micah 6:8",
-    "text": "Mankind, he has told each of you what is good and what it is the LORD requires of you: to act justly, to love faithfulness, and to walk humbly with your God."
-}, {
-    "startDate": "2020-05-31",
-    "endDate": "2020-06-07",
-    "reference": "Colossians 3:23",
-    "text": "Whatever you do, do it from the heart, as something done for the Lord and not for people,"
-}, {
-    "startDate": "2020-06-07",
-    "endDate": "2020-06-14",
-    "reference": "Galatians 5:22-23",
-    "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. The law is not against such things."
-}, {
-    "startDate": "2020-06-14",
-    "endDate": "2020-06-21",
-    "reference": "Romans 12:1-2",
-    "text": "Therefore, brothers and sisters, in view of the mercies of God, I urge you to present your bodies as a living sacrifice, holy and pleasing to God; this is your true worship. Do not be conformed to this age, but be transformed by the renewing of your mind, so that you may discern what is the good, pleasing, and perfect will of God."
-}, {
-    "startDate": "2020-06-28",
-    "endDate": "2020-07-05",
-    "reference": "1 Corinthians 10:13",
-    "text": "No temptation has come upon you except what is common to humanity. But God is faithful; he will not allow you to be tempted beyond what you are able, but with the temptation he will also provide the way out so that you may be able to bear it."
-}, {
-    "startDate": "2020-07-05",
-    "endDate": "2020-07-12",
-    "reference": "", 
-    "text": ""
-}, {
-    "startDate": "2020-07-12",
-    "endDate": "2020-07-19",
-    "reference": "Luke 6:31",
-    "text": "Just as you want others to do for you, do the same for them."
-}, {
-    "startDate": "2020-07-19",
-    "endDate": "2020-07-26",
-    "reference": "Ephesians 4:32",
-    "text": "And be kind and compassionate to one another, forgiving one another, just as God also forgave you in Christ."
-}, {
-    "startDate": "2020-07-26",
-    "endDate": "2020-08-02",
-    "reference": "Ephesians 4:29",
-    "text": "No foul language should come from your mouth, but only what is good for building up someone in need, so that it gives grace to those who hear."
-}, {
-    "startDate": "2020-08-02",
-    "endDate": "2020-08-09",
-    "reference": "1 Thessalonians 5:18",
-    "text": "give thanks in everything; for this is God’s will for you in Christ Jesus."
-}, {
-    "startDate": "2020-08-09",
-    "endDate": "2020-08-16",
-    "reference": "Psalm 107:1",
-    "text": "Give thanks to the LORD, for he is good; his faithful love endures forever."
-}, {
-    "startDate": "2020-08-16",
-    "endDate": "2020-08-23",
-    "reference": "Psalm 139:14",
-    "text": "I will praise you because I have been remarkably and wondrously made. Your works are wondrous, and I know this very well."
-}, {
-    "startDate": "2020-08-23",
-    "endDate": "2020-08-30",
-    "reference": "Philippians 4:6-7",
-    "text": "Don’t worry about anything, but in everything, through prayer and petition with thanksgiving, present your requests to God. And the peace of God, which surpasses all understanding, will guard your hearts and minds in Christ Jesus."
-}, {
-    "startDate": "2020-08-30",
-    "endDate": "2020-09-06",
-    "reference": "Psalm 145:18-19",
-    "text": "The LORD is near all who call out to him, all who call out to him with integrity. He fulfills the desires of those who fear him; he hears their cry for help and saves them."
-}, {
-    "startDate": "2020-09-06",
-    "endDate": "2020-09-13",
-    "reference": "1 Peter 5:7",
-    "text": "casting all your cares on him, because he cares about you."
-}, {
-    "startDate": "2020-09-13",
-    "endDate": "2020-09-20",
-    "reference": "1 John 5:12",
-    "text": "The one who has the Son has life. The one who does not have the Son of God does not have life."
-}, {
-    "startDate": "2020-09-20",
-    "endDate": "2020-09-27",
-    "reference": "James 4:7",
-    "text": "Therefore, submit to God. Resist the devil, and he will flee from you."
-}, {
-    "startDate": "2020-09-27",
-    "endDate": "2020-10-04",
-    "reference": "Proverbs 1:7",
-    "text": "The fear of the LORD is the beginning of knowledge; fools despise wisdom and discipline."
-}, {
-    "startDate": "2020-10-04",
-    "endDate": "2020-10-11",
-    "reference": "1 Timothy 4:12",
-    "text": "Don’t let anyone despise your youth, but set an example for the believers in speech, in conduct, in love, in faith, and in purity."
-}, {
-    "startDate": "2020-10-11",
-    "endDate": "2020-10-18",
-    "reference": "Galatians 5:22-23",
-    "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. The law is not against such things."
-}, {
-    "startDate": "2020-10-18",
-    "endDate": "2020-10-25",
-    "reference": "Philippians 4:8",
-    "text": "Finally brothers and sisters, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable—if there is any moral excellence and if there is anything praiseworthy—dwell on these things."
-}, {
-    "startDate": "2020-10-25",
-    "endDate": "2020-11-01",
-    "reference": "Ephesians 6:1-3",
-    "text": "Children, obey your parents in the Lord, because this is right. Honor your father and mother, which is the first commandment with a promise, so that it may go well with you and that you may have a long life in the land."
-}, {
-    "startDate": "2020-11-01",
-    "endDate": "2020-11-08",
-    "reference": "1 John 1:9",
-    "text": "If we confess our sins, he is faithful and righteous to forgive us our sins and to cleanse us from all unrighteousness."
-}, {
-    "startDate": "2020-11-08",
-    "endDate": "2020-11-15",
-    "reference": "Romans 8:1-2",
-    "text": "Therefore, there is now no condemnation for those in Christ Jesus, [2] because the law of the Spirit of life in Christ Jesus has set you free from the law of sin and death."
-}, {
-    "startDate": "2020-11-15",
-    "endDate": "2020-11-22",
-    "reference": "1 Peter 5:7",
-    "text": "casting all your cares on him, because he cares about you."
-}, {
-    "startDate": "2020-11-22",
-    "endDate": "2020-11-29",
-    "reference": "Proverbs 4:23",
-    "text": "Guard your heart above all else, for it is the source of life."
-}, {
-    "startDate": "2020-11-29",
-    "endDate": "2020-12-06",
-    "reference": "Joshua 1:9",
-    "text": "Haven’t I commanded you: be strong and courageous? Do not be afraid or discouraged, for the LORD your God is with you wherever you go.”"
-}, {
-    "startDate": "2020-12-06",
-    "endDate": "2020-12-13",
-    "reference": "Romans 12:1-2",
-    "text": "Therefore, brothers and sisters, in view of the mercies of God, I urge you to present your bodies as a living sacrifice, holy and pleasing to God; this is your true worship. Do not be conformed to this age, but be transformed by the renewing of your mind, so that you may discern what is the good, pleasing, and perfect will of God."
-}, {
-    "startDate": "2020-12-13",
-    "endDate": "2020-12-20",
-    "reference": "Jeremiah 29:11",
-    "text": "For I know the plans I have for you”—this is the LORD’s declaration—“plans for your well-being, not for disaster, to give you a future and a hope."
-}, {
-    "startDate": "2020-12-20",
-    "endDate": "2020-12-27",
-    "reference": "Ephesians 6:10-11",
-    "text": "Finally, be strengthened by the Lord and by his vast strength. Put on the full armor of God so that you can stand against the schemes of the devil."
-}, {
-    "startDate": "2020-12-27",
-    "endDate": "2021-01-03",
-    "reference": "Isaiah 41:10",
-    "text": "Do not fear, for I am with you; do not be afraid, for I am your God. I will strengthen you; I will help you; I will hold on to you with my righteous right hand."
+    "startDate": "2024-12-30",
+    "endDate": "2025-01-06",
+    "reference": "John 11:25-26",
+    "text": "Jesus said to her, “I am the resurrection and the life. The one who believes in me, even if he dies, will live. Everyone who lives and believes in me will never die. Do you believe this?”" 
 }];
 
 family_reading = [
